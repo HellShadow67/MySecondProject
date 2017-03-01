@@ -1,0 +1,5 @@
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\bin\Debug\CsClient.dll
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\bin\Debug\CsClient.pdb
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\obj\Debug\CsClient.dll
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\obj\Debug\CsClient.pdb
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\obj\Debug\CsClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,42 @@
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.exe
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.pdb
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.xml
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmAccueil.resources
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmIntro.resources
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.Resources.resources
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.exe
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.xml
+C:\Users\sdiemert\Desktop\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.pdb
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.exe
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.xml
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.pdb
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.exe
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.pdb
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.xml
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmAccueil.resources
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmIntro.resources
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.Resources.resources
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.exe
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.xml
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.pdb
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.exe
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.pdb
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CreditCeleste.xml
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmAccueil.resources
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmIntro.resources
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.Resources.resources
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.vbproj.GenerateResource.Cache
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.vbprojResolveAssemblyReference.cache
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.FrmVoiture.resources
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.FrmCredit.resources
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CsClient.dll
+E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CsClient.pdb
+F:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.exe
+F:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.xml
+F:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.pdb
