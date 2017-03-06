@@ -40,3 +40,18 @@ E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\bin\Debug\CsCli
 F:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.exe
 F:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.xml
 F:\BTS SIO\2ème année\1er semestre\CreditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.pdb
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.exe
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.xml
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.pdb
+C:\wamp64\www\creditCeleste\CreditCeleste\bin\Debug\CreditCeleste.exe
+C:\wamp64\www\creditCeleste\CreditCeleste\bin\Debug\CreditCeleste.pdb
+C:\wamp64\www\creditCeleste\CreditCeleste\bin\Debug\CreditCeleste.xml
+C:\wamp64\www\creditCeleste\CreditCeleste\bin\Debug\CsClient.dll
+C:\wamp64\www\creditCeleste\CreditCeleste\bin\Debug\CsClient.pdb
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.vbprojResolveAssemblyReference.cache
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmAccueil.resources
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.FrmCredit.resources
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.frmIntro.resources
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.FrmVoiture.resources
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.Resources.resources
+C:\wamp64\www\creditCeleste\CreditCeleste\obj\x86\Debug\CreditCeleste.vbproj.GenerateResource.Cache
