@@ -32,6 +32,7 @@ Partial Class FrmCredit
         Me.TxtMensualite = New System.Windows.Forms.TextBox()
         Me.BtnCalculer = New System.Windows.Forms.Button()
         Me.LblMsg = New System.Windows.Forms.Label()
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblMensualite
@@ -115,11 +116,21 @@ Partial Class FrmCredit
         Me.LblMsg.Size = New System.Drawing.Size(0, 13)
         Me.LblMsg.TabIndex = 9
         '
+        'btnReset
+        '
+        Me.btnReset.Location = New System.Drawing.Point(132, 263)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnReset.TabIndex = 10
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
         'FrmCredit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(493, 322)
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.LblMsg)
         Me.Controls.Add(Me.BtnCalculer)
         Me.Controls.Add(Me.TxtMensualite)
@@ -146,4 +157,5 @@ Partial Class FrmCredit
     Friend WithEvents TxtMensualite As System.Windows.Forms.TextBox
     Friend WithEvents BtnCalculer As System.Windows.Forms.Button
     Friend WithEvents LblMsg As System.Windows.Forms.Label
+    Friend WithEvents btnReset As System.Windows.Forms.Button
 End Class
