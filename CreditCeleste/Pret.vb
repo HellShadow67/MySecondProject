@@ -1,48 +1,56 @@
-﻿Public Class Pret
+﻿Public MustInherit Class Pret
 
-    Private monMontant As Double ' montant financé
-    Private monDuree As Integer ' durée du prêt
-    Private monMensualité As Double ' mensualité
-    Private monTaux As Double ' taux du prêt
+    Protected monMontant As Double
+    Protected maDuree As Integer
+    Protected maMensualite As Double
+    Protected monTaux As Double
+
+    ' => en private 
 
     Sub New()
 
     End Sub
 
-    Sub New(ByVal montant As Decimal, ByVal duree As Integer, ByVal mensualite As Decimal, ByVal taux As Decimal)
+    '=> vide, seulement plan!!!!
+
+    Sub New(montant As Double, duree As Integer, mensualite As Double, taux As Double)
         monMontant = montant
-        monDuree = duree
-        monMensualité = mensualite
-        monTaux = taux  ''4 donées, possible?
-    End Sub
-
-    Sub New(ByVal duree As Integer, ByVal mensualite As Decimal, ByVal taux As Decimal)
-        monDuree = duree
-        monMensualité = mensualite
-        monTaux = taux
-
-        '' ? monMontant = 0; // dans ce cas, le montant à financer sera calculée
-    End Sub
-
-
-    Sub New(montant, duree, taux)
-        monMontant = montant
-        monDuree = duree
-        ''monMensualité = ?? '' dans ce cas, la mensualité sera calculée
+        maDuree = duree
+        maMensualite = mensualite
         monTaux = taux
     End Sub
 
-    Function getMensualités() As Double
-        Return monMensualité ''// retourne le montant calculé
+    Sub New(duree As Integer, mensualite As Double, taux As Double)
+        maDuree = duree
+        maMensualite = mensualite
+        monTaux = taux
+        monMontant = (maMensualite * (1 - (1 + monTaux) ^ maDuree * 12) / monTaux)
+    End Sub
+
+    Sub New(montant As Double, duree As Integer, taux As Double)
+        monMontant = montant
+        maDuree = duree
+        monTaux = taux
+        maMensualite = (montant * ((taux / 100) / 12)) / (1 - (1 + (taux / 100) / 12) ^ -duree)
+    End Sub
+
+
+    Function getMensualites() As Double
+        Return maMensualite
     End Function
 
-    ''Function getMensualités() As Double
-    '' Return monMensualité ''// retourne une mensualité déjà calculée
-    '' End Function
+    Overridable Function getMontant(duree As Integer, mensualite As Double, taux As Double) As Double
+        taux = taux / 100
 
-    Function getMensualités(montant, durée, taux) As Double
-        ' taux --> proportionnel // en déduit qu’il faut la calculer, vu que les montants sont transmis
-        Return monMensualité
+        monMontant = (mensualite * (1 - (1 + (taux / 12)) ^ -duree)) / (taux / 12)
+        Return monMontant
+    End Function
+
+    Overridable Function getMensualites(montant As Double, duree As Integer, taux As Double) As Double
+        taux = taux / 100
+
+        maMensualite = (montant * taux) / (1 - Math.Pow((1 + taux), -duree))
+        Return maMensualite
     End Function
 
 End Class

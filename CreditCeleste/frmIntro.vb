@@ -1,4 +1,5 @@
 ﻿Imports CsClient
+Imports System.Data.SqlClient
 
 Public Class frmIntro
 
@@ -7,12 +8,34 @@ Public Class frmIntro
     End Sub
 
     Private Sub frmIntro_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        For Each xVendeur As Vendeur In uneConcession.LesVendeurs
+
+        ''DESKTOP-R0IJ4CS\SQLEXPRESSS
+
+        Dim connectionString As String = "Server=DESKTOP-R0IJ4CS\SQLEXPRESS; Initial Catalog=CreditCeleste;Trusted_Connection=Yes"
+
+        '=> pas de connexion ici, appelle de la collection dans accueil
+
+        Dim con As New SqlConnection(connectionString)
+        Dim dr As SqlDataReader
+
+        Dim myCommand = New SqlCommand("Select * from Vendeur", con)
+
+        con.Open()
+        dr = myCommand.ExecuteReader()
 
 
-            cboVendeur.Items.Add(xVendeur.getInfoVendeur)
+        While dr.Read()
+            cboVendeur.Items.Add(dr("NomVendeur").ToString())
+            dr.NextResult()
+        End While
 
-        Next
+        con.Close()
+
+        ''For Each xVendeur As Vendeur In uneConcession.LesVendeurs
+
+        ''   cboVendeur.Items.Add(xVendeur.getInfoVendeur)
+
+        '' Next
     End Sub
 
     Private Sub cmdEnregistrer_Click(sender As System.Object, e As System.EventArgs) Handles cmdEnregistrer.Click
@@ -72,5 +95,9 @@ Public Class frmIntro
         fenCredit = New FrmCredit
         fenCredit.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub cboVendeur_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cboVendeur.SelectedIndexChanged
+
     End Sub
 End Class

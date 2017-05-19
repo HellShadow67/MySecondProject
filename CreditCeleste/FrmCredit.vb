@@ -7,43 +7,62 @@
     Private Sub BtnCalculer_Click(sender As System.Object, e As System.EventArgs) Handles BtnCalculer.Click
 
 
-        Dim Duree As Integer
+        Dim Duree As Double
         Dim Montant As Double
         Dim Mensualite As Double
         Dim Taux As Double
 
-        If (TxtDuree.Text = "") Then
-            Montant = TxtMensualite.Text
-            Mensualite = TxtMontant.Text
-            Taux = TxtTaux.Text
-            '' Taux = CDbl(TxtTaux.Text.ToString)
 
-            Duree = Math.Log(-Mensualite / ((Taux / 100) / (12 * Montant) - Mensualite)) / Math.Log(1 + (Taux / 100) / 12)
-            TxtDuree.Text = Duree
+
+        If (TxtDuree.Text = "") Then
+            Montant = Convert.ToDouble(TxtMensualite.Text)
+            Mensualite = Convert.ToDouble(TxtMontant.Text)
+            Taux = Convert.ToDouble(TxtTaux.Text)
 
             LblMsg.Text = "Le calcul de la durée effectué!"
-
-        Else
-            Duree = TxtDuree.Text
         End If
 
-        '' la mensualité (m), du taux (t) et du nombre de mois du crédit (n) 
+        If (TxtMensualite.Text = "") Then
+            Montant = Convert.ToDouble(TxtMensualite.Text)
 
-        ''    _________m(x(1 - (1 + t / 12) ^ (-n)))
-        ''Capital = ---------------------------------- 
-        ''______________t/12 
+            Taux = Convert.ToDouble(TxtTaux.Text)
+            Duree = Convert.ToDouble(TxtDuree.Text)
 
-        ''ou cette formule pour déterminer la mensualité en fonction du capital emprunté (c), du taux (t) et du nombre de mois du crédit (n) 
-
-        ''________________c x t/12 
-        ''Mensualité = ----------------------------- 
-        ''      _____________1(-(1 + t / 12) ^ (-n))
+            Mensualite = ((Montant * ((Taux / 100)) / (1 - (1 + (Taux / 100)) ^ (-Duree))) / 12)
 
 
+            LblMsg.Text = "Le calcul des mensualités effectué!"
+        End If
+
+        If (TxtTaux.Text = "") Then
+            Montant = Convert.ToDouble(TxtMensualite.Text)
+            Mensualite = Convert.ToDouble(TxtMontant.Text)
+            Duree = Convert.ToDouble(TxtDuree.Text)
+
+            Dim tx = 50.0
+            Dim resultat = False
+
+            While resultat <> True
+
+            End While
+
+            Taux = 0
+
+            LblMsg.Text = "Le calcul du taux effectué!"
+        End If
+
+        If (TxtMontant.Text = "") Then
+
+            Mensualite = Convert.ToDouble(TxtMontant.Text)
+            Taux = Convert.ToDouble(TxtTaux.Text)
+            Duree = Convert.ToDouble(TxtDuree.Text)
+
+            Montant = Mensualite * (1 - (1 + ((Taux / 100) / 12)) ^ (-Duree)) / ((Taux / 100) / 12)
 
 
+            LblMsg.Text = "Le calcul du montant effectué!"
+        End If
 
-        ''LblMsg: erreur si tous les champs sont remplis ou si un manque, ...
     End Sub
 
 End Class

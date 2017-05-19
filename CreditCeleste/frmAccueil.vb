@@ -2,6 +2,9 @@
 
     Private Sub frmAccueil_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        '=> connexion bdd, pas en dure
+
+
         uneConcession = New Concession("garage des halles", "65 rue Duarte Samanta")
 
         Dim unVendeur As New Vendeur() '' variable locale
@@ -41,6 +44,14 @@
         fenIntro = New frmIntro
         fenIntro.Show()
         Me.Hide()
+
+    End Sub
+
+    Private Sub btnEtude_Click(sender As System.Object, e As System.EventArgs) Handles btnEtude.Click
+
+    End Sub
+
+    Private Sub btnRelance_Click(sender As System.Object, e As System.EventArgs) Handles btnRelance.Click
 
     End Sub
 End Class
