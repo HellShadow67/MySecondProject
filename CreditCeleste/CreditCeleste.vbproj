@@ -78,6 +78,12 @@
     <Compile Include="ClientVoit.vb" />
     <Compile Include="Concession.vb" />
     <Compile Include="Credit.vb" />
+    <Compile Include="frmCatalogueVoiture.Designer.vb">
+      <DependentUpon>frmCatalogueVoiture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatalogueVoiture.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LLD.vb" />
     <Compile Include="LOA.vb" />
     <Compile Include="Pret.vb" />
@@ -128,6 +134,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmAccueil.resx">
       <DependentUpon>frmAccueil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatalogueVoiture.resx">
+      <DependentUpon>frmCatalogueVoiture.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCredit.resx">
       <DependentUpon>FrmCredit.vb</DependentUpon>

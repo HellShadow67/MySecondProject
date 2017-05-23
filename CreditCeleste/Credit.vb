@@ -61,7 +61,7 @@ Public Class Credit
         Return MyBase.getMensualites(montant, duree, taux)
     End Function
 
-    Public Function enregistreBDD()
+    Public Sub enregistreBDD()
         Dim strConn As String
         strConn = "Server=DESKTOP-R0IJ4CS\SQLEXPRESS; Initial Catalog=CreditCeleste;Trusted_Connection=Yes"
 
@@ -81,6 +81,6 @@ Public Class Credit
         Catch ex As Exception
             MsgBox(retMessage)
         End Try
-    End Function
+    End Sub
 
 End Class
