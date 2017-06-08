@@ -1,0 +1,237 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TestVb
+</name>
+</assembly>
+<members>
+<member name="P:TestVb.SettingsTest.TestContext">
+	<summary>
+Obtient ou définit le contexte de test qui fournit
+des informations sur la série de tests active ainsi que ses fonctionnalités.
+</summary>
+</member><member name="M:TestVb.SettingsTest.SettingsConstructorTest">
+	<summary>
+Test pour Constructeur Settings
+</summary>
+</member><member name="M:TestVb.SettingsTest.DefaultTest">
+	<summary>
+Test pour Default
+</summary>
+</member><member name="T:TestVb.SettingsTest">
+	<summary>
+Classe de test pour SettingsTest, destinée à contenir tous
+les tests unitaires SettingsTest
+</summary>
+</member><member name="P:TestVb.ResourcesTest.TestContext">
+	<summary>
+Obtient ou définit le contexte de test qui fournit
+des informations sur la série de tests active ainsi que ses fonctionnalités.
+</summary>
+</member><member name="M:TestVb.ResourcesTest.ResourcesConstructorTest">
+	<summary>
+Test pour Constructeur Resources
+</summary>
+</member><member name="M:TestVb.ResourcesTest.CultureTest">
+	<summary>
+Test pour Culture
+</summary>
+</member><member name="M:TestVb.ResourcesTest.ResourceManagerTest">
+	<summary>
+Test pour ResourceManager
+</summary>
+</member><member name="T:TestVb.ResourcesTest">
+	<summary>
+Classe de test pour ResourcesTest, destinée à contenir tous
+les tests unitaires ResourcesTest
+</summary>
+</member><member name="P:TestVb.operationTest.TestContext">
+	<summary>
+Obtient ou définit le contexte de test qui fournit
+des informations sur la série de tests active ainsi que ses fonctionnalités.
+</summary>
+</member><member name="M:TestVb.operationTest.additionTest">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.operationTest.additionTest1">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.operationTest.additionTest2">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.operationTest.additionTest3">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.operationTest.additionTest4">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.operationTest.disBonjourTest">
+	<summary>
+Test pour disBonjour
+</summary>
+</member><member name="T:TestVb.operationTest">
+	<summary>
+Classe de test pour operationTest, destinée à contenir tous
+les tests unitaires operationTest
+</summary>
+</member><member name="P:TestVb.frmCalculTest.TestContext">
+	<summary>
+Obtient ou définit le contexte de test qui fournit
+des informations sur la série de tests active ainsi que ses fonctionnalités.
+</summary>
+</member><member name="M:TestVb.frmCalculTest.frmCalculConstructorTest">
+	<summary>
+Test pour Constructeur frmCalcul
+</summary>
+</member><member name="M:TestVb.frmCalculTest.DisposeTest">
+	<summary>
+Test pour Dispose
+</summary>
+</member><member name="M:TestVb.frmCalculTest.InitializeComponentTest">
+	<summary>
+Test pour InitializeComponent
+</summary>
+</member><member name="M:TestVb.frmCalculTest.btn3val_ClickTest">
+	<summary>
+Test pour btn3val_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.btn4val_ClickTest">
+	<summary>
+Test pour btn4val_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.btnAdditionDblNewPar2_ClickTest">
+	<summary>
+Test pour btnAdditionDblNewPar2_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.btnAdditionDblNew_ClickTest">
+	<summary>
+Test pour btnAdditionDblNew_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.btnAdditionDblPar2_ClickTest">
+	<summary>
+Test pour btnAdditionDblPar2_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.btnAdditionPar2_ClickTest">
+	<summary>
+Test pour btnAdditionPar2_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.btnAddition_ClickTest">
+	<summary>
+Test pour btnAddition_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.cmdAdditionDbl_ClickTest">
+	<summary>
+Test pour cmdAdditionDbl_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.cmdBonjour_ClickTest">
+	<summary>
+Test pour cmdBonjour_Click
+</summary>
+</member><member name="M:TestVb.frmCalculTest.frmCalcul_LoadTest">
+	<summary>
+Test pour frmCalcul_Load
+</summary>
+</member><member name="M:TestVb.frmCalculTest.txtA_TextChangedTest">
+	<summary>
+Test pour txtA_TextChanged
+</summary>
+</member><member name="T:TestVb.frmCalculTest">
+	<summary>
+Classe de test pour frmCalculTest, destinée à contenir tous
+les tests unitaires frmCalculTest
+</summary>
+</member><member name="P:TestVb.calcPar2Test.TestContext">
+	<summary>
+Obtient ou définit le contexte de test qui fournit
+des informations sur la série de tests active ainsi que ses fonctionnalités.
+</summary>
+</member><member name="M:TestVb.calcPar2Test.calcPar2ConstructorTest">
+	<summary>
+Test pour Constructeur calcPar2
+</summary>
+</member><member name="M:TestVb.calcPar2Test.calcPar2ConstructorTest1">
+	<summary>
+Test pour Constructeur calcPar2
+</summary>
+</member><member name="M:TestVb.calcPar2Test.additionTest">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.calcPar2Test.additionTest1">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.calcPar2Test.additionTest2">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="T:TestVb.calcPar2Test">
+	<summary>
+Classe de test pour calcPar2Test, destinée à contenir tous
+les tests unitaires calcPar2Test
+</summary>
+</member><member name="P:TestVb.calcTest.TestContext">
+	<summary>
+Obtient ou définit le contexte de test qui fournit
+des informations sur la série de tests active ainsi que ses fonctionnalités.
+</summary>
+</member><member name="M:TestVb.calcTest.calcConstructorTest">
+	<summary>
+Test pour Constructeur calc
+</summary>
+</member><member name="M:TestVb.calcTest.calcConstructorTest1">
+	<summary>
+Test pour Constructeur calc
+</summary>
+</member><member name="M:TestVb.calcTest.calcConstructorTest2">
+	<summary>
+Test pour Constructeur calc
+</summary>
+</member><member name="M:TestVb.calcTest.additionTest">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.calcTest.additionTest1">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.calcTest.additionTest2">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.calcTest.additionTest3">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="M:TestVb.calcTest.additionTest4">
+	<summary>
+Test pour addition
+</summary>
+</member><member name="T:TestVb.calcTest">
+	<summary>
+Classe de test pour calcTest, destinée à contenir tous
+les tests unitaires calcTest
+</summary>
+</member><member name="P:TestVb.ProgramTest.TestContext">
+	<summary>
+Obtient ou définit le contexte de test qui fournit
+des informations sur la série de tests active ainsi que ses fonctionnalités.
+</summary>
+</member><member name="M:TestVb.ProgramTest.MainTest">
+	<summary>
+Test pour Main
+</summary>
+</member><member name="T:TestVb.ProgramTest">
+	<summary>
+Classe de test pour ProgramTest, destinée à contenir tous
+les tests unitaires ProgramTest
+</summary>
+</member>
+</members>
+</doc>

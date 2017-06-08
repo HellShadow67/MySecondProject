@@ -23,6 +23,7 @@ Partial Class FrmVoiture
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GrpBxNouvVeh = New System.Windows.Forms.GroupBox()
+        Me.LblAff = New System.Windows.Forms.Label()
         Me.BtnCred = New System.Windows.Forms.Button()
         Me.BtnInt = New System.Windows.Forms.Button()
         Me.BtnEnr = New System.Windows.Forms.Button()
@@ -36,7 +37,7 @@ Partial Class FrmVoiture
         Me.txtNumImm = New System.Windows.Forms.TextBox()
         Me.LblDateImm = New System.Windows.Forms.Label()
         Me.TxtDateImm = New System.Windows.Forms.TextBox()
-        Me.LblAff = New System.Windows.Forms.Label()
+        Me.btnAccueil = New System.Windows.Forms.Button()
         Me.GrpBxNouvVeh.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,6 +50,15 @@ Partial Class FrmVoiture
         Me.GrpBxNouvVeh.TabIndex = 0
         Me.GrpBxNouvVeh.TabStop = False
         Me.GrpBxNouvVeh.Text = "Mon Nouveau Véhicule"
+        '
+        'LblAff
+        '
+        Me.LblAff.AutoSize = True
+        Me.LblAff.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.LblAff.Location = New System.Drawing.Point(64, 66)
+        Me.LblAff.Name = "LblAff"
+        Me.LblAff.Size = New System.Drawing.Size(0, 13)
+        Me.LblAff.TabIndex = 12
         '
         'BtnCred
         '
@@ -157,20 +167,21 @@ Partial Class FrmVoiture
         Me.TxtDateImm.Size = New System.Drawing.Size(100, 20)
         Me.TxtDateImm.TabIndex = 11
         '
-        'LblAff
+        'btnAccueil
         '
-        Me.LblAff.AutoSize = True
-        Me.LblAff.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.LblAff.Location = New System.Drawing.Point(64, 66)
-        Me.LblAff.Name = "LblAff"
-        Me.LblAff.Size = New System.Drawing.Size(0, 13)
-        Me.LblAff.TabIndex = 12
+        Me.btnAccueil.Location = New System.Drawing.Point(731, 26)
+        Me.btnAccueil.Name = "btnAccueil"
+        Me.btnAccueil.Size = New System.Drawing.Size(75, 23)
+        Me.btnAccueil.TabIndex = 12
+        Me.btnAccueil.Text = "Accueil"
+        Me.btnAccueil.UseVisualStyleBackColor = True
         '
         'FrmVoiture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(840, 483)
+        Me.Controls.Add(Me.btnAccueil)
         Me.Controls.Add(Me.TxtDateImm)
         Me.Controls.Add(Me.LblDateImm)
         Me.Controls.Add(Me.BtnCred)
@@ -208,4 +219,5 @@ Partial Class FrmVoiture
     Friend WithEvents LblDateImm As System.Windows.Forms.Label
     Friend WithEvents TxtDateImm As System.Windows.Forms.TextBox
     Friend WithEvents LblAff As System.Windows.Forms.Label
+    Friend WithEvents btnAccueil As System.Windows.Forms.Button
 End Class

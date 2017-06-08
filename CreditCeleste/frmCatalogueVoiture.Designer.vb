@@ -34,6 +34,7 @@ Partial Class frmCatalogueVoiture
         Me.cmbEtat = New System.Windows.Forms.ComboBox()
         Me.lblTarif = New System.Windows.Forms.Label()
         Me.cmbPrix = New System.Windows.Forms.ComboBox()
+        Me.btnAccueil = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnValider
@@ -139,11 +140,21 @@ Partial Class frmCatalogueVoiture
         Me.cmbPrix.Size = New System.Drawing.Size(121, 21)
         Me.cmbPrix.TabIndex = 11
         '
+        'btnAccueil
+        '
+        Me.btnAccueil.Location = New System.Drawing.Point(674, 292)
+        Me.btnAccueil.Name = "btnAccueil"
+        Me.btnAccueil.Size = New System.Drawing.Size(75, 23)
+        Me.btnAccueil.TabIndex = 12
+        Me.btnAccueil.Text = "Accueil"
+        Me.btnAccueil.UseVisualStyleBackColor = True
+        '
         'frmCatalogueVoiture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(786, 354)
+        Me.Controls.Add(Me.btnAccueil)
         Me.Controls.Add(Me.cmbPrix)
         Me.Controls.Add(Me.lblTarif)
         Me.Controls.Add(Me.cmbEtat)
@@ -174,4 +185,5 @@ Partial Class frmCatalogueVoiture
     Friend WithEvents cmbEtat As System.Windows.Forms.ComboBox
     Friend WithEvents lblTarif As System.Windows.Forms.Label
     Friend WithEvents cmbPrix As System.Windows.Forms.ComboBox
+    Friend WithEvents btnAccueil As System.Windows.Forms.Button
 End Class

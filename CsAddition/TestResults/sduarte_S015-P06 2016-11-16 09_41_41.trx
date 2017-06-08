@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0e1701af-238a-4571-b2a5-46dfd1cba64b" name="sduarte@S015-P06 2016-11-16 09:41:41" runUser="0670086E\sduarte" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="02b3b4c5-8979-44a4-b16f-c3e99d0da1c1">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sduarte_S015-P06 2016-11-16 09_41_41">
+      <DeploymentItem filename="F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\bin\Debug\CsAddition.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-11-16T09:41:41.0158928+01:00" queuing="2016-11-16T09:41:41.2909203+01:00" start="2016-11-16T09:41:41.3139226+01:00" finish="2016-11-16T09:41:57.0364947+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="39" executed="39" error="0" failed="15" timeout="0" aborted="0" inconclusive="24" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="S015-P06" outcome="Warning" timestamp="2016-11-16T09:41:41.1859098+01:00">
+        <Text>Le déploiement est actuellement désactivé. L'élément de déploiement 'CsAddition.exe' sur le test 'TestVb.ResourcesTest.ResourceManagerTest' n'a pas été déployé.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ResourceManagerTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="c217aec9-a2c1-1741-9e7d-3fb3f6a2ebc8">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="9b4d9961-5509-4cc4-80f1-75d9c6cf1da7" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.ResourcesTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResourceManagerTest" />
+    </UnitTest>
+    <UnitTest name="ResourcesConstructorTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="5e3ec27e-ba0f-02d3-608c-084db338e4ce">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="a2cbfb62-73f5-4e49-8ad9-f00d5cde9cab" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.ResourcesTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResourcesConstructorTest" />
+    </UnitTest>
+    <UnitTest name="additionTest1" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="eb29ed25-614c-a91c-ff83-bce1ad9ecadc">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="8fc19574-f762-4837-a0ff-4732e61137a3" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.operationTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest1" />
+    </UnitTest>
+    <UnitTest name="calcPar2ConstructorTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="29654427-f937-82c0-d9b0-ac1e34ca012b">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="c3c5146e-0741-4d8f-a43f-929687aa02c9" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcPar2Test, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="calcPar2ConstructorTest" />
+    </UnitTest>
+    <UnitTest name="additionTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="70006c46-33dd-6771-a33c-7ac3d3bb1c08">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="3bfbe5db-6ef2-496e-8e3d-9376abfd90b6" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.operationTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest" />
+    </UnitTest>
+    <UnitTest name="SettingsConstructorTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="4401d783-4ab6-7fe5-602f-2bcf3aefcb68">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="f9bb28dd-7fb3-49c6-a78b-b532469ca30b" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.SettingsTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SettingsConstructorTest" />
+    </UnitTest>
+    <UnitTest name="btnAdditionDblPar2_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="7cd08f16-0623-59ba-7e75-d3240e3e56f3">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="5454d1be-c293-4a2d-8028-57ae17f9c527" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnAdditionDblPar2_ClickTest" />
+    </UnitTest>
+    <UnitTest name="additionTest2" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="455e51b5-337e-2084-297d-8dba0e669416">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="b246eed4-2422-49c1-b62c-0f5372533f38" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.operationTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest2" />
+    </UnitTest>
+    <UnitTest name="additionTest1" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="db269c3a-b089-39ac-5c73-74f695663238">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="c59417e3-287f-4c95-992a-4495a4f685a7" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcPar2Test, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest1" />
+    </UnitTest>
+    <UnitTest name="additionTest4" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="7011bca7-e4d8-b66a-9ef3-8d88abf0255f">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="057e8b6a-b1d8-42f4-9af7-bbd3e428b8b3" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest4" />
+    </UnitTest>
+    <UnitTest name="txtA_TextChangedTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="43bd6da1-f461-7ee3-b268-fe3332b006b1">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="f89d2b92-770d-478b-a29e-11be91882a46" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="txtA_TextChangedTest" />
+    </UnitTest>
+    <UnitTest name="btn4val_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="5f0ae07a-b8cc-7181-d810-ae068d53f239">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="18964ea5-92d6-4564-8146-6759b3fbbfde" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btn4val_ClickTest" />
+    </UnitTest>
+    <UnitTest name="additionTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="77f55edb-3d24-6a32-16ad-ea95c311220b">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="a608fb04-aa13-4945-8c21-86629c34841c" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest" />
+    </UnitTest>
+    <UnitTest name="additionTest2" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="579ba866-c7f8-32e9-e9aa-0795788f478b">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="240827fd-e60d-44cb-99ca-e5646beac34b" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest2" />
+    </UnitTest>
+    <UnitTest name="frmCalcul_LoadTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="4fc6c8bd-1626-7e86-99af-2c1bd12fbdf5">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="126deaad-3fc9-49b7-80e7-af38beed9326" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="frmCalcul_LoadTest" />
+    </UnitTest>
+    <UnitTest name="calcConstructorTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="0a15f7c7-4598-6ff2-6a7c-fc52ec756de0">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="62ec0bcd-40e5-4fe0-8b7e-98e98196307f" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="calcConstructorTest" />
+    </UnitTest>
+    <UnitTest name="calcConstructorTest1" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="8c26357e-f0fb-5857-1dd5-80f927a8cf2b">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="d4f656da-932c-4761-ba4f-a9ca38beba7f" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="calcConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="calcConstructorTest2" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="52849161-6723-0312-f2c2-d5fff8c18cba">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="9dbb4508-62f1-40e4-a5b2-d90de6c71c0e" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="calcConstructorTest2" />
+    </UnitTest>
+    <UnitTest name="cmdBonjour_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="ac2cc693-195a-436a-32d9-86195d72b333">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="06dc9603-2e2a-49f0-9379-ae33ecbd9e10" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cmdBonjour_ClickTest" />
+    </UnitTest>
+    <UnitTest name="btn3val_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="4fe84e12-1cf8-38f4-d77b-31daf48a04df">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="1c8548b0-fd9e-4c25-9ab8-f204221ce36d" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btn3val_ClickTest" />
+    </UnitTest>
+    <UnitTest name="cmdAdditionDbl_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="6b20f7b6-dbfb-c622-a9f6-29e310d30403">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="bf46be35-a8e0-474c-b28d-eb5923d69c08" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cmdAdditionDbl_ClickTest" />
+    </UnitTest>
+    <UnitTest name="btnAdditionDblNew_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="c5bdbaa8-1847-784e-e614-6d3492ee47e6">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="f78fb436-d9ca-4c06-9817-2246995da651" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnAdditionDblNew_ClickTest" />
+    </UnitTest>
+    <UnitTest name="additionTest3" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="48b4df4a-0d57-94af-df86-465161c51e30">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="05e2e3e0-777c-49c4-a200-f4cc085da566" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.operationTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest3" />
+    </UnitTest>
+    <UnitTest name="CultureTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="b73bba01-d37e-bf58-3792-e3ceae533408">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="fc8cb932-d8db-4a63-8f31-f1e1c0204983" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.ResourcesTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CultureTest" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="71c75cff-83da-b2a5-449e-ca3e0db519fc">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="34591cc6-7f27-4b4b-a977-2ea06493dd47" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="calcPar2ConstructorTest1" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="1d515922-4565-1a8c-24f3-aff59620ba21">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="88cf3362-1414-4d38-98e9-0d396024d848" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcPar2Test, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="calcPar2ConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="MainTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="cb9ce181-e4a1-ba0c-948b-bedc15f74622">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="ccc17fd7-ff76-4912-a0b8-0d8bd298d66e" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.ProgramTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MainTest" />
+    </UnitTest>
+    <UnitTest name="additionTest1" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="25dd2a6c-d7f1-f650-6754-8e36ec13fa99">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="bdc784cd-1935-4df1-b384-f7cca3ff36ba" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest1" />
+    </UnitTest>
+    <UnitTest name="additionTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="0564dc60-ec1a-b7ef-b10b-3908d2319bb4">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="e83e8c66-6446-4549-9046-bb801fcc0d34" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcPar2Test, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest" />
+    </UnitTest>
+    <UnitTest name="btnAdditionPar2_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="22e0d82f-f2e5-3110-d9c1-c2847a0819e0">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="9cc22bb5-e410-4de1-ba0e-d54a67757645" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnAdditionPar2_ClickTest" />
+    </UnitTest>
+    <UnitTest name="additionTest2" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="7144461d-5467-d78f-01e6-6b62be384995">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="472fa8d3-558b-4350-a679-de17b5ad33a5" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcPar2Test, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest2" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="52ccce04-8e12-81dc-8518-5bf67e29e47d">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="4a755ba9-045b-4636-9d71-6655f325535a" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="btnAdditionDblNewPar2_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="3f9442b3-c934-efa7-2a62-9038eadc02c9">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="4e72dc00-a946-4d7d-88bb-f5f8c3ee837e" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnAdditionDblNewPar2_ClickTest" />
+    </UnitTest>
+    <UnitTest name="disBonjourTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="7d9d20a0-e287-6815-deb7-2801f2b89cc7">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="583fbcff-2466-4a66-a2c9-ba80ec7a1a88" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.operationTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="disBonjourTest" />
+    </UnitTest>
+    <UnitTest name="additionTest3" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="f535be44-1056-8e70-cde0-5ec463ba5493">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="c94e4563-1923-4a25-af7c-cb284851fa5f" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest3" />
+    </UnitTest>
+    <UnitTest name="btnAddition_ClickTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="128abcce-5a35-0638-e52f-e6693c030e8b">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="bab02faa-a0c1-4bb3-8a77-69d3e46a9e8c" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnAddition_ClickTest" />
+    </UnitTest>
+    <UnitTest name="frmCalculConstructorTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="7670c4eb-b098-bfc6-b152-0deff94197a9">
+      <Execution id="679dabef-e079-4c08-aef2-670d28b28ef4" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.frmCalculTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="frmCalculConstructorTest" />
+    </UnitTest>
+    <UnitTest name="DefaultTest" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="24adf497-1b92-76d2-6053-a59650b10788">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="bd3b7325-de2d-45e0-9485-0c8947d7cb86" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.SettingsTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DefaultTest" />
+    </UnitTest>
+    <UnitTest name="additionTest4" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="93e6403d-85f2-ce88-df03-15beb2cc13a0">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="d161d59d-4dc4-458b-a6ba-45fe10c3039f" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.operationTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest4" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0564dc60-ec1a-b7ef-b10b-3908d2319bb4" executionId="e83e8c66-6446-4549-9046-bb801fcc0d34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a15f7c7-4598-6ff2-6a7c-fc52ec756de0" executionId="62ec0bcd-40e5-4fe0-8b7e-98e98196307f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="128abcce-5a35-0638-e52f-e6693c030e8b" executionId="bab02faa-a0c1-4bb3-8a77-69d3e46a9e8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d515922-4565-1a8c-24f3-aff59620ba21" executionId="88cf3362-1414-4d38-98e9-0d396024d848" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22e0d82f-f2e5-3110-d9c1-c2847a0819e0" executionId="9cc22bb5-e410-4de1-ba0e-d54a67757645" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24adf497-1b92-76d2-6053-a59650b10788" executionId="bd3b7325-de2d-45e0-9485-0c8947d7cb86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25dd2a6c-d7f1-f650-6754-8e36ec13fa99" executionId="bdc784cd-1935-4df1-b384-f7cca3ff36ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29654427-f937-82c0-d9b0-ac1e34ca012b" executionId="c3c5146e-0741-4d8f-a43f-929687aa02c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f9442b3-c934-efa7-2a62-9038eadc02c9" executionId="4e72dc00-a946-4d7d-88bb-f5f8c3ee837e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43bd6da1-f461-7ee3-b268-fe3332b006b1" executionId="f89d2b92-770d-478b-a29e-11be91882a46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4401d783-4ab6-7fe5-602f-2bcf3aefcb68" executionId="f9bb28dd-7fb3-49c6-a78b-b532469ca30b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="455e51b5-337e-2084-297d-8dba0e669416" executionId="b246eed4-2422-49c1-b62c-0f5372533f38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48b4df4a-0d57-94af-df86-465161c51e30" executionId="05e2e3e0-777c-49c4-a200-f4cc085da566" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fc6c8bd-1626-7e86-99af-2c1bd12fbdf5" executionId="126deaad-3fc9-49b7-80e7-af38beed9326" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fe84e12-1cf8-38f4-d77b-31daf48a04df" executionId="1c8548b0-fd9e-4c25-9ab8-f204221ce36d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52849161-6723-0312-f2c2-d5fff8c18cba" executionId="9dbb4508-62f1-40e4-a5b2-d90de6c71c0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52ccce04-8e12-81dc-8518-5bf67e29e47d" executionId="4a755ba9-045b-4636-9d71-6655f325535a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="579ba866-c7f8-32e9-e9aa-0795788f478b" executionId="240827fd-e60d-44cb-99ca-e5646beac34b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e3ec27e-ba0f-02d3-608c-084db338e4ce" executionId="a2cbfb62-73f5-4e49-8ad9-f00d5cde9cab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f0ae07a-b8cc-7181-d810-ae068d53f239" executionId="18964ea5-92d6-4564-8146-6759b3fbbfde" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b20f7b6-dbfb-c622-a9f6-29e310d30403" executionId="bf46be35-a8e0-474c-b28d-eb5923d69c08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70006c46-33dd-6771-a33c-7ac3d3bb1c08" executionId="3bfbe5db-6ef2-496e-8e3d-9376abfd90b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7011bca7-e4d8-b66a-9ef3-8d88abf0255f" executionId="057e8b6a-b1d8-42f4-9af7-bbd3e428b8b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7144461d-5467-d78f-01e6-6b62be384995" executionId="472fa8d3-558b-4350-a679-de17b5ad33a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71c75cff-83da-b2a5-449e-ca3e0db519fc" executionId="34591cc6-7f27-4b4b-a977-2ea06493dd47" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7670c4eb-b098-bfc6-b152-0deff94197a9" executionId="679dabef-e079-4c08-aef2-670d28b28ef4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77f55edb-3d24-6a32-16ad-ea95c311220b" executionId="a608fb04-aa13-4945-8c21-86629c34841c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7cd08f16-0623-59ba-7e75-d3240e3e56f3" executionId="5454d1be-c293-4a2d-8028-57ae17f9c527" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d9d20a0-e287-6815-deb7-2801f2b89cc7" executionId="583fbcff-2466-4a66-a2c9-ba80ec7a1a88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c26357e-f0fb-5857-1dd5-80f927a8cf2b" executionId="d4f656da-932c-4761-ba4f-a9ca38beba7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93e6403d-85f2-ce88-df03-15beb2cc13a0" executionId="d161d59d-4dc4-458b-a6ba-45fe10c3039f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac2cc693-195a-436a-32d9-86195d72b333" executionId="06dc9603-2e2a-49f0-9379-ae33ecbd9e10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b73bba01-d37e-bf58-3792-e3ceae533408" executionId="fc8cb932-d8db-4a63-8f31-f1e1c0204983" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c217aec9-a2c1-1741-9e7d-3fb3f6a2ebc8" executionId="9b4d9961-5509-4cc4-80f1-75d9c6cf1da7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5bdbaa8-1847-784e-e614-6d3492ee47e6" executionId="f78fb436-d9ca-4c06-9817-2246995da651" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb9ce181-e4a1-ba0c-948b-bedc15f74622" executionId="ccc17fd7-ff76-4912-a0b8-0d8bd298d66e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db269c3a-b089-39ac-5c73-74f695663238" executionId="c59417e3-287f-4c95-992a-4495a4f685a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb29ed25-614c-a91c-ff83-bce1ad9ecadc" executionId="8fc19574-f762-4837-a0ff-4732e61137a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f535be44-1056-8e70-cde0-5ec463ba5493" executionId="c94e4563-1923-4a25-af7c-cb284851fa5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e83e8c66-6446-4549-9046-bb801fcc0d34" testId="0564dc60-ec1a-b7ef-b10b-3908d2319bb4" testName="additionTest" computerName="S015-P06" duration="00:00:00.0920326" startTime="2016-11-16T09:41:41.3869299+01:00" endTime="2016-11-16T09:41:41.7669679+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e83e8c66-6446-4549-9046-bb801fcc0d34">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;0&gt;, Réel : &lt;396&gt;. </Message>
+          <StackTrace>   à TestVb.calcPar2Test.additionTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcPar2Test.vb:ligne 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="62ec0bcd-40e5-4fe0-8b7e-98e98196307f" testId="0a15f7c7-4598-6ff2-6a7c-fc52ec756de0" testName="calcConstructorTest" computerName="S015-P06" duration="00:00:00.0021456" startTime="2016-11-16T09:41:41.8039716+01:00" endTime="2016-11-16T09:41:41.8099722+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62ec0bcd-40e5-4fe0-8b7e-98e98196307f">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à TestVb.calcTest.calcConstructorTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 66
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bab02faa-a0c1-4bb3-8a77-69d3e46a9e8c" testId="128abcce-5a35-0638-e52f-e6693c030e8b" testName="btnAddition_ClickTest" computerName="S015-P06" duration="00:00:00.0524062" startTime="2016-11-16T09:41:41.8529765+01:00" endTime="2016-11-16T09:41:41.9099822+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bab02faa-a0c1-4bb3-8a77-69d3e46a9e8c">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.btnAddition_ClickTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.btnAddition_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.btnAddition_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 178
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="88cf3362-1414-4d38-98e9-0d396024d848" testId="1d515922-4565-1a8c-24f3-aff59620ba21" testName="calcPar2ConstructorTest1" computerName="S015-P06" duration="00:00:00.0006565" startTime="2016-11-16T09:41:41.9479860+01:00" endTime="2016-11-16T09:41:41.9509863+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88cf3362-1414-4d38-98e9-0d396024d848">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à TestVb.calcPar2Test.calcPar2ConstructorTest1() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcPar2Test.vb:ligne 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9cc22bb5-e410-4de1-ba0e-d54a67757645" testId="22e0d82f-f2e5-3110-d9c1-c2847a0819e0" testName="btnAdditionPar2_ClickTest" computerName="S015-P06" duration="00:00:00.0134786" startTime="2016-11-16T09:41:41.9919904+01:00" endTime="2016-11-16T09:41:42.0099922+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9cc22bb5-e410-4de1-ba0e-d54a67757645">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.btnAdditionPar2_ClickTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.btnAdditionPar2_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.btnAdditionPar2_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 165
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bd3b7325-de2d-45e0-9485-0c8947d7cb86" testId="24adf497-1b92-76d2-6053-a59650b10788" testName="DefaultTest" computerName="S015-P06" duration="00:00:00.0011109" startTime="2016-11-16T09:41:42.0489961+01:00" endTime="2016-11-16T09:41:42.0539966+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd3b7325-de2d-45e0-9485-0c8947d7cb86">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour CsAddition.Properties.Settings. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.SettingsTest.DefaultTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\SettingsTest.vb:ligne 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bdc784cd-1935-4df1-b384-f7cca3ff36ba" testId="25dd2a6c-d7f1-f650-6754-8e36ec13fa99" testName="additionTest1" computerName="S015-P06" duration="00:00:00.0031000" startTime="2016-11-16T09:41:42.0960008+01:00" endTime="2016-11-16T09:41:42.1020014+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bdc784cd-1935-4df1-b384-f7cca3ff36ba">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;0&gt;, Réel : &lt;198&gt;. </Message>
+          <StackTrace>   à TestVb.calcTest.additionTest1() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 120
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3c5146e-0741-4d8f-a43f-929687aa02c9" testId="29654427-f937-82c0-d9b0-ac1e34ca012b" testName="calcPar2ConstructorTest" computerName="S015-P06" duration="00:00:00.0017235" startTime="2016-11-16T09:41:42.1420054+01:00" endTime="2016-11-16T09:41:42.1470059+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3c5146e-0741-4d8f-a43f-929687aa02c9">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à TestVb.calcPar2Test.calcPar2ConstructorTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcPar2Test.vb:ligne 66
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4e72dc00-a946-4d7d-88bb-f5f8c3ee837e" testId="3f9442b3-c934-efa7-2a62-9038eadc02c9" testName="btnAdditionDblNewPar2_ClickTest" computerName="S015-P06" duration="00:00:00.0072528" startTime="2016-11-16T09:41:42.1900102+01:00" endTime="2016-11-16T09:41:42.2010113+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e72dc00-a946-4d7d-88bb-f5f8c3ee837e">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.btnAdditionDblNewPar2_ClickTest a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.btnAdditionDblNewPar2_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.btnAdditionDblNewPar2_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 126
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f89d2b92-770d-478b-a29e-11be91882a46" testId="43bd6da1-f461-7ee3-b268-fe3332b006b1" testName="txtA_TextChangedTest" computerName="S015-P06" duration="00:00:00.0033342" startTime="2016-11-16T09:41:42.2400152+01:00" endTime="2016-11-16T09:41:42.2460158+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f89d2b92-770d-478b-a29e-11be91882a46">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à TestVb.frmCalculTest.txtA_TextChangedTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 231
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f9bb28dd-7fb3-49c6-a78b-b532469ca30b" testId="4401d783-4ab6-7fe5-602f-2bcf3aefcb68" testName="SettingsConstructorTest" computerName="S015-P06" duration="00:00:00.0010375" startTime="2016-11-16T09:41:42.2880200+01:00" endTime="2016-11-16T09:41:42.2930205+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9bb28dd-7fb3-49c6-a78b-b532469ca30b">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour CsAddition.Properties.Settings. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.SettingsTest.SettingsConstructorTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\SettingsTest.vb:ligne 64
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b246eed4-2422-49c1-b62c-0f5372533f38" testId="455e51b5-337e-2084-297d-8dba0e669416" testName="additionTest2" computerName="S015-P06" duration="00:00:00.0011680" startTime="2016-11-16T09:41:42.3320244+01:00" endTime="2016-11-16T09:41:42.3370249+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b246eed4-2422-49c1-b62c-0f5372533f38">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour addition. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.operationTest.additionTest2() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\operationTest.vb:ligne 92
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="05e2e3e0-777c-49c4-a200-f4cc085da566" testId="48b4df4a-0d57-94af-df86-465161c51e30" testName="additionTest3" computerName="S015-P06" duration="00:00:00.0010349" startTime="2016-11-16T09:41:42.3790291+01:00" endTime="2016-11-16T09:41:42.3840296+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05e2e3e0-777c-49c4-a200-f4cc085da566">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour addition. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.operationTest.additionTest3() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\operationTest.vb:ligne 103
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="126deaad-3fc9-49b7-80e7-af38beed9326" testId="4fc6c8bd-1626-7e86-99af-2c1bd12fbdf5" testName="frmCalcul_LoadTest" computerName="S015-P06" duration="00:00:00.0029310" startTime="2016-11-16T09:41:42.4230335+01:00" endTime="2016-11-16T09:41:42.4290341+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="126deaad-3fc9-49b7-80e7-af38beed9326">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à TestVb.frmCalculTest.frmCalcul_LoadTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 218
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1c8548b0-fd9e-4c25-9ab8-f204221ce36d" testId="4fe84e12-1cf8-38f4-d77b-31daf48a04df" testName="btn3val_ClickTest" computerName="S015-P06" duration="00:00:00.0049557" startTime="2016-11-16T09:41:42.4710383+01:00" endTime="2016-11-16T09:41:42.4790391+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c8548b0-fd9e-4c25-9ab8-f204221ce36d">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.btn3val_ClickTest a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.btn3val_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.btn3val_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 100
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9dbb4508-62f1-40e4-a5b2-d90de6c71c0e" testId="52849161-6723-0312-f2c2-d5fff8c18cba" testName="calcConstructorTest2" computerName="S015-P06" duration="00:00:00.0008322" startTime="2016-11-16T09:41:42.5170429+01:00" endTime="2016-11-16T09:41:42.5210433+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9dbb4508-62f1-40e4-a5b2-d90de6c71c0e">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à TestVb.calcTest.calcConstructorTest2() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4a755ba9-045b-4636-9d71-6655f325535a" testId="52ccce04-8e12-81dc-8518-5bf67e29e47d" testName="InitializeComponentTest" computerName="S015-P06" duration="00:00:00.0039917" startTime="2016-11-16T09:41:42.5630475+01:00" endTime="2016-11-16T09:41:42.5710483+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a755ba9-045b-4636-9d71-6655f325535a">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à TestVb.frmCalculTest.InitializeComponentTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="240827fd-e60d-44cb-99ca-e5646beac34b" testId="579ba866-c7f8-32e9-e9aa-0795788f478b" testName="additionTest2" computerName="S015-P06" duration="00:00:00.0019150" startTime="2016-11-16T09:41:42.6100522+01:00" endTime="2016-11-16T09:41:42.6160528+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="240827fd-e60d-44cb-99ca-e5646beac34b">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à TestVb.calcTest.additionTest2() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 138
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a2cbfb62-73f5-4e49-8ad9-f00d5cde9cab" testId="5e3ec27e-ba0f-02d3-608c-084db338e4ce" testName="ResourcesConstructorTest" computerName="S015-P06" duration="00:00:00.0012844" startTime="2016-11-16T09:41:42.6580570+01:00" endTime="2016-11-16T09:41:42.6630575+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2cbfb62-73f5-4e49-8ad9-f00d5cde9cab">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour CsAddition.Properties.Resources. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.ResourcesTest.ResourcesConstructorTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\ResourcesTest.vb:ligne 64
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="18964ea5-92d6-4564-8146-6759b3fbbfde" testId="5f0ae07a-b8cc-7181-d810-ae068d53f239" testName="btn4val_ClickTest" computerName="S015-P06" duration="00:00:00.0041709" startTime="2016-11-16T09:41:42.7010613+01:00" endTime="2016-11-16T09:41:42.7080620+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18964ea5-92d6-4564-8146-6759b3fbbfde">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.btn4val_ClickTest a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.btn4val_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.btn4val_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf46be35-a8e0-474c-b28d-eb5923d69c08" testId="6b20f7b6-dbfb-c622-a9f6-29e310d30403" testName="cmdAdditionDbl_ClickTest" computerName="S015-P06" duration="00:00:00.0035853" startTime="2016-11-16T09:41:42.7500662+01:00" endTime="2016-11-16T09:41:42.7560668+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf46be35-a8e0-474c-b28d-eb5923d69c08">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.cmdAdditionDbl_ClickTest a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.cmdAdditionDbl_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.cmdAdditionDbl_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 191
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3bfbe5db-6ef2-496e-8e3d-9376abfd90b6" testId="70006c46-33dd-6771-a33c-7ac3d3bb1c08" testName="additionTest" computerName="S015-P06" duration="00:00:00.0010160" startTime="2016-11-16T09:41:42.7940706+01:00" endTime="2016-11-16T09:41:42.7980710+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bfbe5db-6ef2-496e-8e3d-9376abfd90b6">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour addition. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.operationTest.additionTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\operationTest.vb:ligne 70
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="057e8b6a-b1d8-42f4-9af7-bbd3e428b8b3" testId="7011bca7-e4d8-b66a-9ef3-8d88abf0255f" testName="additionTest4" computerName="S015-P06" duration="00:00:00.0036020" startTime="2016-11-16T09:41:42.8400752+01:00" endTime="2016-11-16T09:41:42.8480760+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="057e8b6a-b1d8-42f4-9af7-bbd3e428b8b3">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;0&gt;, Réel : &lt;3&gt;. </Message>
+          <StackTrace>   à TestVb.calcTest.additionTest4() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="472fa8d3-558b-4350-a679-de17b5ad33a5" testId="7144461d-5467-d78f-01e6-6b62be384995" testName="additionTest2" computerName="S015-P06" duration="00:00:00.0052130" startTime="2016-11-16T09:41:42.8880800+01:00" endTime="2016-11-16T09:41:42.8970809+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="472fa8d3-558b-4350-a679-de17b5ad33a5">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.calcPar2Test.additionTest2 a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.calcPar2_Accessor.addition(String a, String b)
+   à TestVb.calcPar2Test.additionTest2() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcPar2Test.vb:ligne 120
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="34591cc6-7f27-4b4b-a977-2ea06493dd47" testId="71c75cff-83da-b2a5-449e-ca3e0db519fc" testName="DisposeTest" computerName="S015-P06" duration="00:00:00.0026937" startTime="2016-11-16T09:41:42.9390851+01:00" endTime="2016-11-16T09:41:42.9500862+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34591cc6-7f27-4b4b-a977-2ea06493dd47">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à TestVb.frmCalculTest.DisposeTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="679dabef-e079-4c08-aef2-670d28b28ef4" testId="7670c4eb-b098-bfc6-b152-0deff94197a9" testName="frmCalculConstructorTest" computerName="S015-P06" duration="00:00:00.0025962" startTime="2016-11-16T09:41:43.0160928+01:00" endTime="2016-11-16T09:41:43.0220934+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="679dabef-e079-4c08-aef2-670d28b28ef4">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à TestVb.frmCalculTest.frmCalculConstructorTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 65
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a608fb04-aa13-4945-8c21-86629c34841c" testId="77f55edb-3d24-6a32-16ad-ea95c311220b" testName="additionTest" computerName="S015-P06" duration="00:00:00.0020208" startTime="2016-11-16T09:41:43.0650977+01:00" endTime="2016-11-16T09:41:43.0700982+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a608fb04-aa13-4945-8c21-86629c34841c">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à TestVb.calcTest.additionTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 107
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5454d1be-c293-4a2d-8028-57ae17f9c527" testId="7cd08f16-0623-59ba-7e75-d3240e3e56f3" testName="btnAdditionDblPar2_ClickTest" computerName="S015-P06" duration="00:00:00.0067694" startTime="2016-11-16T09:41:43.1101022+01:00" endTime="2016-11-16T09:41:43.1201032+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5454d1be-c293-4a2d-8028-57ae17f9c527">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.btnAdditionDblPar2_ClickTest a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.btnAdditionDblPar2_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.btnAdditionDblPar2_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 152
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="583fbcff-2466-4a66-a2c9-ba80ec7a1a88" testId="7d9d20a0-e287-6815-deb7-2801f2b89cc7" testName="disBonjourTest" computerName="S015-P06" duration="00:00:00.0029830" startTime="2016-11-16T09:41:43.1621074+01:00" endTime="2016-11-16T09:41:43.1691081+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="583fbcff-2466-4a66-a2c9-ba80ec7a1a88">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.operationTest.disBonjourTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>   à CsAddition.operation_Accessor.disBonjour()
+   à TestVb.operationTest.disBonjourTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\operationTest.vb:ligne 134
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d4f656da-932c-4761-ba4f-a9ca38beba7f" testId="8c26357e-f0fb-5857-1dd5-80f927a8cf2b" testName="calcConstructorTest1" computerName="S015-P06" duration="00:00:00.0017960" startTime="2016-11-16T09:41:43.2081120+01:00" endTime="2016-11-16T09:41:43.2141126+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4f656da-932c-4761-ba4f-a9ca38beba7f">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à TestVb.calcTest.calcConstructorTest1() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d161d59d-4dc4-458b-a6ba-45fe10c3039f" testId="93e6403d-85f2-ce88-df03-15beb2cc13a0" testName="additionTest4" computerName="S015-P06" duration="00:00:00.0010089" startTime="2016-11-16T09:41:43.2581170+01:00" endTime="2016-11-16T09:41:43.2631175+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d161d59d-4dc4-458b-a6ba-45fe10c3039f">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour addition. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.operationTest.additionTest4() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\operationTest.vb:ligne 114
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="06dc9603-2e2a-49f0-9379-ae33ecbd9e10" testId="ac2cc693-195a-436a-32d9-86195d72b333" testName="cmdBonjour_ClickTest" computerName="S015-P06" duration="00:00:00.0139225" startTime="2016-11-16T09:41:43.3041216+01:00" endTime="2016-11-16T09:41:43.3221234+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06dc9603-2e2a-49f0-9379-ae33ecbd9e10">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.cmdBonjour_ClickTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.cmdBonjour_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.cmdBonjour_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 204
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fc8cb932-d8db-4a63-8f31-f1e1c0204983" testId="b73bba01-d37e-bf58-3792-e3ceae533408" testName="CultureTest" computerName="S015-P06" duration="00:00:00.0010198" startTime="2016-11-16T09:41:43.3641276+01:00" endTime="2016-11-16T09:41:43.3691281+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc8cb932-d8db-4a63-8f31-f1e1c0204983">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour CsAddition.Properties.Resources. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.ResourcesTest.CultureTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\ResourcesTest.vb:ligne 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9b4d9961-5509-4cc4-80f1-75d9c6cf1da7" testId="c217aec9-a2c1-1741-9e7d-3fb3f6a2ebc8" testName="ResourceManagerTest" computerName="S015-P06" duration="00:00:00.0009951" startTime="2016-11-16T09:41:43.4091321+01:00" endTime="2016-11-16T09:41:43.4131325+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b4d9961-5509-4cc4-80f1-75d9c6cf1da7">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour CsAddition.Properties.Resources. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.ResourcesTest.ResourceManagerTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\ResourcesTest.vb:ligne 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f78fb436-d9ca-4c06-9817-2246995da651" testId="c5bdbaa8-1847-784e-e614-6d3492ee47e6" testName="btnAdditionDblNew_ClickTest" computerName="S015-P06" duration="00:00:00.0067191" startTime="2016-11-16T09:41:43.4561368+01:00" endTime="2016-11-16T09:41:43.4671379+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f78fb436-d9ca-4c06-9817-2246995da651">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.frmCalculTest.btnAdditionDblNew_ClickTest a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.frmCalcul_Accessor.btnAdditionDblNew_Click(Object sender, EventArgs e)
+   à TestVb.frmCalculTest.btnAdditionDblNew_ClickTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\frmCalculTest.vb:ligne 139
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ccc17fd7-ff76-4912-a0b8-0d8bd298d66e" testId="cb9ce181-e4a1-ba0c-948b-bedc15f74622" testName="MainTest" computerName="S015-P06" duration="00:00:13.2189756" startTime="2016-11-16T09:41:43.5061418+01:00" endTime="2016-11-16T09:41:56.7294640+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ccc17fd7-ff76-4912-a0b8-0d8bd298d66e">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à TestVb.ProgramTest.MainTest() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\ProgramTest.vb:ligne 64
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c59417e3-287f-4c95-992a-4495a4f685a7" testId="db269c3a-b089-39ac-5c73-74f695663238" testName="additionTest1" computerName="S015-P06" duration="00:00:00.0009198" startTime="2016-11-16T09:41:56.7964707+01:00" endTime="2016-11-16T09:41:56.7994710+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c59417e3-287f-4c95-992a-4495a4f685a7">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à TestVb.calcPar2Test.additionTest1() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcPar2Test.vb:ligne 106
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8fc19574-f762-4837-a0ff-4732e61137a3" testId="eb29ed25-614c-a91c-ff83-bce1ad9ecadc" testName="additionTest1" computerName="S015-P06" duration="00:00:00.0010035" startTime="2016-11-16T09:41:56.8394750+01:00" endTime="2016-11-16T09:41:56.8444755+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fc19574-f762-4837-a0ff-4732e61137a3">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Impossible de trouver un accesseur private pour addition. Régénérez le projet contenant ou exécutez Publicize.exe manuellement.</Message>
+          <StackTrace>   à TestVb.operationTest.additionTest1() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\operationTest.vb:ligne 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c94e4563-1923-4a25-af7c-cb284851fa5f" testId="f535be44-1056-8e70-cde0-5ec463ba5493" testName="additionTest3" computerName="S015-P06" duration="00:00:00.0048999" startTime="2016-11-16T09:41:56.9154826+01:00" endTime="2016-11-16T09:41:56.9244835+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c94e4563-1923-4a25-af7c-cb284851fa5f">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test TestVb.calcTest.additionTest3 a levé une exception : 
+System.FormatException: Le format de la chaîne d'entrée est incorrect.</Message>
+          <StackTrace>   à CsAddition.calc_Accessor.addition(String a, String b)
+   à TestVb.calcTest.additionTest3() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 152
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

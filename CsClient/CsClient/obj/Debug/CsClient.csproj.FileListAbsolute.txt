@@ -3,3 +3,8 @@ E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\bin\Debug\C
 E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\obj\Debug\CsClient.dll
 E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\obj\Debug\CsClient.pdb
 E:\BTS SIO\2ème année\1er semestre\CreditCeleste\CsClient\CsClient\obj\Debug\CsClient.csprojResolveAssemblyReference.cache
+C:\wamp64\www\CreditCeleste3\CsClient\CsClient\bin\Debug\CsClient.dll
+C:\wamp64\www\CreditCeleste3\CsClient\CsClient\bin\Debug\CsClient.pdb
+C:\wamp64\www\CreditCeleste3\CsClient\CsClient\obj\Debug\CsClient.csprojResolveAssemblyReference.cache
+C:\wamp64\www\CreditCeleste3\CsClient\CsClient\obj\Debug\CsClient.dll
+C:\wamp64\www\CreditCeleste3\CsClient\CsClient\obj\Debug\CsClient.pdb

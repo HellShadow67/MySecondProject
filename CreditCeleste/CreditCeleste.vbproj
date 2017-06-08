@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="ClientVoit.vb" />
     <Compile Include="Concession.vb" />
+    <Compile Include="Client.vb" />
     <Compile Include="Credit.vb" />
     <Compile Include="frmCatalogueVoiture.Designer.vb">
       <DependentUpon>frmCatalogueVoiture.vb</DependentUpon>
@@ -128,6 +129,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Stat.Designer.vb">
+      <DependentUpon>Stat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stat.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vendeur.vb" />
     <Compile Include="Voiture.vb" />
   </ItemGroup>
@@ -152,6 +159,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stat.resx">
+      <DependentUpon>Stat.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

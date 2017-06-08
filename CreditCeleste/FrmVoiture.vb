@@ -28,4 +28,10 @@
     Private Sub GrpBxNouvVeh_Enter(sender As System.Object, e As System.EventArgs) Handles GrpBxNouvVeh.Enter
 
     End Sub
+
+    Private Sub btnAccueil_Click(sender As System.Object, e As System.EventArgs) Handles btnAccueil.Click
+        unPageAccueil = New frmAccueil
+        unPageAccueil.Show()
+        Me.Hide()
+    End Sub
 End Class

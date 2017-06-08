@@ -33,6 +33,8 @@ Partial Class FrmCredit
         Me.BtnCalculer = New System.Windows.Forms.Button()
         Me.LblMsg = New System.Windows.Forms.Label()
         Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnEnregistrer = New System.Windows.Forms.Button()
+        Me.btnAccueil = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblMensualite
@@ -125,11 +127,31 @@ Partial Class FrmCredit
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
         '
+        'btnEnregistrer
+        '
+        Me.btnEnregistrer.Location = New System.Drawing.Point(235, 263)
+        Me.btnEnregistrer.Name = "btnEnregistrer"
+        Me.btnEnregistrer.Size = New System.Drawing.Size(75, 23)
+        Me.btnEnregistrer.TabIndex = 11
+        Me.btnEnregistrer.Text = "Enregister"
+        Me.btnEnregistrer.UseVisualStyleBackColor = True
+        '
+        'btnAccueil
+        '
+        Me.btnAccueil.Location = New System.Drawing.Point(455, 27)
+        Me.btnAccueil.Name = "btnAccueil"
+        Me.btnAccueil.Size = New System.Drawing.Size(75, 23)
+        Me.btnAccueil.TabIndex = 12
+        Me.btnAccueil.Text = "Accueil"
+        Me.btnAccueil.UseVisualStyleBackColor = True
+        '
         'FrmCredit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(493, 322)
+        Me.ClientSize = New System.Drawing.Size(557, 322)
+        Me.Controls.Add(Me.btnAccueil)
+        Me.Controls.Add(Me.btnEnregistrer)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.LblMsg)
         Me.Controls.Add(Me.BtnCalculer)
@@ -158,4 +180,6 @@ Partial Class FrmCredit
     Friend WithEvents BtnCalculer As System.Windows.Forms.Button
     Friend WithEvents LblMsg As System.Windows.Forms.Label
     Friend WithEvents btnReset As System.Windows.Forms.Button
+    Friend WithEvents btnEnregistrer As System.Windows.Forms.Button
+    Friend WithEvents btnAccueil As System.Windows.Forms.Button
 End Class
