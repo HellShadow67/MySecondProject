@@ -36,6 +36,17 @@ namespace CsClient
 
         }
 
+
+        public void setAll(int numCli, string nomCli, string prenomCli, string adresseCli, string identCli)
+        {
+            numeroClient = numCli;
+            nomClient = nomCli;
+            prenomClient = prenomCli;
+            adresseClient = adresseCli;
+            identClient = identCli;
+
+        }
+
         public int getNumeroClient()
             {
                 return numeroClient;

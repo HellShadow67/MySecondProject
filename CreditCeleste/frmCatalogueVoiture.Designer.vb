@@ -23,7 +23,7 @@ Partial Class frmCatalogueVoiture
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnValider = New System.Windows.Forms.Button()
-        Me.btnAnnuler = New System.Windows.Forms.Button()
+        Me.btnVendre = New System.Windows.Forms.Button()
         Me.lblMarque = New System.Windows.Forms.Label()
         Me.lblEtat = New System.Windows.Forms.Label()
         Me.lblPuissance = New System.Windows.Forms.Label()
@@ -34,25 +34,27 @@ Partial Class frmCatalogueVoiture
         Me.cmbEtat = New System.Windows.Forms.ComboBox()
         Me.lblTarif = New System.Windows.Forms.Label()
         Me.cmbPrix = New System.Windows.Forms.ComboBox()
+        Me.btnAccueil = New System.Windows.Forms.Button()
+        Me.btnCredit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnValider
         '
-        Me.btnValider.Location = New System.Drawing.Point(117, 292)
+        Me.btnValider.Location = New System.Drawing.Point(71, 292)
         Me.btnValider.Name = "btnValider"
         Me.btnValider.Size = New System.Drawing.Size(75, 23)
         Me.btnValider.TabIndex = 0
         Me.btnValider.Text = "Valider l'achat"
         Me.btnValider.UseVisualStyleBackColor = True
         '
-        'btnAnnuler
+        'btnVendre
         '
-        Me.btnAnnuler.Location = New System.Drawing.Point(242, 292)
-        Me.btnAnnuler.Name = "btnAnnuler"
-        Me.btnAnnuler.Size = New System.Drawing.Size(75, 23)
-        Me.btnAnnuler.TabIndex = 1
-        Me.btnAnnuler.Text = "Annuler"
-        Me.btnAnnuler.UseVisualStyleBackColor = True
+        Me.btnVendre.Location = New System.Drawing.Point(242, 292)
+        Me.btnVendre.Name = "btnVendre"
+        Me.btnVendre.Size = New System.Drawing.Size(115, 23)
+        Me.btnVendre.TabIndex = 1
+        Me.btnVendre.Text = "Vendre un vehicule"
+        Me.btnVendre.UseVisualStyleBackColor = True
         '
         'lblMarque
         '
@@ -139,11 +141,31 @@ Partial Class frmCatalogueVoiture
         Me.cmbPrix.Size = New System.Drawing.Size(121, 21)
         Me.cmbPrix.TabIndex = 11
         '
+        'btnAccueil
+        '
+        Me.btnAccueil.Location = New System.Drawing.Point(674, 292)
+        Me.btnAccueil.Name = "btnAccueil"
+        Me.btnAccueil.Size = New System.Drawing.Size(75, 23)
+        Me.btnAccueil.TabIndex = 12
+        Me.btnAccueil.Text = "Accueil"
+        Me.btnAccueil.UseVisualStyleBackColor = True
+        '
+        'btnCredit
+        '
+        Me.btnCredit.Location = New System.Drawing.Point(433, 292)
+        Me.btnCredit.Name = "btnCredit"
+        Me.btnCredit.Size = New System.Drawing.Size(75, 23)
+        Me.btnCredit.TabIndex = 13
+        Me.btnCredit.Text = "Credit"
+        Me.btnCredit.UseVisualStyleBackColor = True
+        '
         'frmCatalogueVoiture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(786, 354)
+        Me.Controls.Add(Me.btnCredit)
+        Me.Controls.Add(Me.btnAccueil)
         Me.Controls.Add(Me.cmbPrix)
         Me.Controls.Add(Me.lblTarif)
         Me.Controls.Add(Me.cmbEtat)
@@ -154,7 +176,7 @@ Partial Class frmCatalogueVoiture
         Me.Controls.Add(Me.lblPuissance)
         Me.Controls.Add(Me.lblEtat)
         Me.Controls.Add(Me.lblMarque)
-        Me.Controls.Add(Me.btnAnnuler)
+        Me.Controls.Add(Me.btnVendre)
         Me.Controls.Add(Me.btnValider)
         Me.Name = "frmCatalogueVoiture"
         Me.Text = "frmCatalogueVoiture"
@@ -163,7 +185,7 @@ Partial Class frmCatalogueVoiture
 
     End Sub
     Friend WithEvents btnValider As System.Windows.Forms.Button
-    Friend WithEvents btnAnnuler As System.Windows.Forms.Button
+    Friend WithEvents btnVendre As System.Windows.Forms.Button
     Friend WithEvents lblMarque As System.Windows.Forms.Label
     Friend WithEvents lblEtat As System.Windows.Forms.Label
     Friend WithEvents lblPuissance As System.Windows.Forms.Label
@@ -174,4 +196,6 @@ Partial Class frmCatalogueVoiture
     Friend WithEvents cmbEtat As System.Windows.Forms.ComboBox
     Friend WithEvents lblTarif As System.Windows.Forms.Label
     Friend WithEvents cmbPrix As System.Windows.Forms.ComboBox
+    Friend WithEvents btnAccueil As System.Windows.Forms.Button
+    Friend WithEvents btnCredit As System.Windows.Forms.Button
 End Class

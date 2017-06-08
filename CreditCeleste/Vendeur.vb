@@ -48,5 +48,18 @@
 
     End Function
 
+    Function getNomPrenom() As String
+        Return monNomVendeur + " " + monPrenomVendeur
+    End Function
+    Function getNom() As String
+        Return monNomVendeur
+    End Function
+    Function getPrenom() As String
+        Return monPrenomVendeur
+    End Function
+
+    Function getId() As String
+        Return monIdentifiantVendeur
+    End Function
 
 End Class

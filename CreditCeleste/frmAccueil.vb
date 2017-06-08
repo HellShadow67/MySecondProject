@@ -1,45 +1,44 @@
-﻿Public Class frmAccueil
+﻿Imports CsClient
+Imports System.Data.SqlClient
+
+
+Public Class frmAccueil
 
     Private Sub frmAccueil_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        '=> connexion bdd, pas en dure
 
 
-        uneConcession = New Concession("garage des halles", "65 rue Duarte Samanta")
+        Dim connectionString As String = "Server=DESKTOP-R0IJ4CS\SQLEXPRESS; Initial Catalog=CreditCeleste;Trusted_Connection=Yes"
 
-        Dim unVendeur As New Vendeur() '' variable locale
+        Dim con As New SqlConnection(connectionString)
+        Dim dr As SqlDataReader
+
+        Dim myCommand = New SqlCommand("Select * from Vendeur", con)
+
+        con.Open()
+        dr = myCommand.ExecuteReader()
+
+        Dim nomVendeur = ""
+        Dim PrenomVendeur = ""
+
+        While dr.Read()
+            nomVendeur = dr("NomVendeur").ToString()
+            PrenomVendeur = dr("PrenomVendeur").ToString()
+            cboVendeur.Items.Add(nomVendeur + " " + PrenomVendeur)
+            '' dr.NextResult()
+        End While
+
+        con.Close()
+
+        Dim unVendeur As New Vendeur
 
 
 
-        unVendeur.setVendeur("M", "Stark", "Tony")
-
-        Dim unVendeur2 As New Vendeur()
-        unVendeur2.setIdVendeur("mlle.")
-        unVendeur2.setNomVendeur("Duarte")
-        unVendeur2.setPrenomVendeur("Samanta")
-
-
-        Dim vendeur3 As New Vendeur("Mme", "Quinn", "Harley") '' avec constructeur
-
-
-        ''mise a jour de la concession
-
-        Dim Vendeur4 As New Vendeur("M", "Dead", "Pool")
-
-        uneConcession.LesVendeurs.Add(Vendeur4)
-        uneConcession.LesVendeurs.Add(vendeur3)
-        uneConcession.LesVendeurs.Add(unVendeur2)
-        uneConcession.LesVendeurs.Add(unVendeur)
-
-        '' uneConcession.LesVendeurs.Add("Mlle Duarte Samanta")
 
 
     End Sub
 
     Private Sub cmdIntroduction_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdIntroduction.Click
-
-
-        '' affichage de la fenetre d'introduction
 
         fenIntro = New frmIntro
         fenIntro.Show()
@@ -49,9 +48,22 @@
 
     Private Sub btnEtude_Click(sender As System.Object, e As System.EventArgs) Handles btnEtude.Click
 
+        fenEtude = New Stat
+        fenEtude.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub btnRelance_Click(sender As System.Object, e As System.EventArgs) Handles btnRelance.Click
+    Private Sub cboVendeur_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cboVendeur.SelectedIndexChanged
+
+        btnEtude.Enabled = True
+        cmdIntroduction.Enabled = True
+
+
+        Dim words As String() = cboVendeur.SelectedItem.ToString().Split(" ")
+        Dim nom As String = words(0)
+        Dim prenom As String = words(1)
+
+        unVendeur.setVendeur(0, nom, prenom)
 
     End Sub
 End Class

@@ -1,92 +1,47 @@
-﻿Imports CsClient
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
+
+
 
 Public Class frmIntro
 
-    Private Sub cboIdentifiant_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cboIdentifiant.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub frmIntro_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
-        ''DESKTOP-R0IJ4CS\SQLEXPRESSS
-
-        Dim connectionString As String = "Server=DESKTOP-R0IJ4CS\SQLEXPRESS; Initial Catalog=CreditCeleste;Trusted_Connection=Yes"
-
-        '=> pas de connexion ici, appelle de la collection dans accueil
-
-        Dim con As New SqlConnection(connectionString)
-        Dim dr As SqlDataReader
-
-        Dim myCommand = New SqlCommand("Select * from Vendeur", con)
-
-        con.Open()
-        dr = myCommand.ExecuteReader()
+    Dim connectionString As String = "Server=DESKTOP-R0IJ4CS\SQLEXPRESS; Initial Catalog=CreditCeleste;Trusted_Connection=Yes"
+    Dim con As New SqlConnection(connectionString)
+    Dim dr As SqlDataReader
 
 
-        While dr.Read()
-            cboVendeur.Items.Add(dr("NomVendeur").ToString())
-            dr.NextResult()
-        End While
 
-        con.Close()
 
-        ''For Each xVendeur As Vendeur In uneConcession.LesVendeurs
-
-        ''   cboVendeur.Items.Add(xVendeur.getInfoVendeur)
-
-        '' Next
-    End Sub
 
     Private Sub cmdEnregistrer_Click(sender As System.Object, e As System.EventArgs) Handles cmdEnregistrer.Click
 
-        Dim age As String
-        Dim radio As RadioButton
-        Dim i As Integer
-        i = 0
-
-        unClient.setNomClient(txtbxNom.Text)
-        unClient.setPrenomClient(txtbxPrenom.Text)
-        unClient.setIdentClient(cboIdentifiant.Text)
-
-        uneVoiture.setNomVehicule(txtbxNvVehicule.Text)
-        uneVoiture.setMonAcienVehicule(txtbxAncVehicule.Text)
+        cmdCredit.Enabled = True
+        cmdVendreVoit.Enabled = True
+        cmdAcheterVoiture.Enabled = True
 
 
-        '' ou : unClient.saVoiture.setNomVehicule(txtNouvVehicule.Tesxt)
+        Dim nom = txtbxNom.Text
+        Dim prenom = txtbxPrenom.Text
 
-        For i = 0 To GroupBox1.Controls.Count - 1
-            radio = GroupBox1.Controls(i)
+        unClient.setClientNomPrenom(nom, prenom)
+        unClient.setIdClient("oui")
 
-            If radio.Checked Then
-                age = radio.Text
-            End If
+        con.Open()
 
-            uneVoiture.setMonAgeVehicule(age)
+        Dim myCommand = New SqlCommand("insert into client(Nom,Prenom,numRue,rue,cp,ville) values('" + txtbxNom.Text + "','" + txtbxPrenom.Text + "'," + txtNumRue.Text + ",'" + cmbRue.Text + " " + txtRue.Text + "','" + txtCp.Text + "','" + txtVille.Text + "')", con)
+        dr = myCommand.ExecuteReader()
 
-            '' radio=GroupBox1.controls
-            '' for each radio in GroupBox1.controls
-            '' If radio.Checked Then
-            '' age= radio.text
-            '' End If
-
-            '' leVendeur = cboVendeur.Text
-
-            ''  MsgBox()
+        con.Close()
 
 
-        Next
+        MessageBox.Show("La sauvegarde a bien été effectuée!")
 
     End Sub
 
-    Private Sub lblType_Click(sender As System.Object, e As System.EventArgs)
 
-    End Sub
+    Private Sub cmdVoiture_Click(sender As System.Object, e As System.EventArgs) Handles cmdAcheterVoiture.Click
 
-    Private Sub cmdVoiture_Click(sender As System.Object, e As System.EventArgs) Handles cmdVoiture.Click
-
-        fenVoiture = New FrmVoiture
-        fenVoiture.Show()
+        fenCatalogueVoiture = New frmCatalogueVoiture
+        fenCatalogueVoiture.Show()
         Me.Hide()
 
     End Sub
@@ -97,7 +52,23 @@ Public Class frmIntro
         Me.Hide()
     End Sub
 
-    Private Sub cboVendeur_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cboVendeur.SelectedIndexChanged
 
+    Private Sub btnAccueil_Click(sender As System.Object, e As System.EventArgs) Handles btnAccueil.Click
+        unPageAccueil = New frmAccueil
+        unPageAccueil.Show()
+        Me.Hide()
+    End Sub
+
+
+
+    Private Sub frmIntro_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        Dim unClient As New Client
+
+    End Sub
+
+    Private Sub cmdVendreVoit_Click(sender As System.Object, e As System.EventArgs) Handles cmdVendreVoit.Click
+        fenvoiture = New FrmVoiture
+        fenvoiture.Show()
+        Me.Hide()
     End Sub
 End Class

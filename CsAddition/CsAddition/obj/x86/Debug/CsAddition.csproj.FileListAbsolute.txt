@@ -1,0 +1,16 @@
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\bin\Debug\CsAddition.exe
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\bin\Debug\CsAddition.pdb
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\obj\x86\Debug\CsAddition.Properties.Resources.resources
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\obj\x86\Debug\CsAddition.csproj.GenerateResource.Cache
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\obj\x86\Debug\CsAddition.exe
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\obj\x86\Debug\CsAddition.pdb
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\obj\x86\Debug\CsAddition.frmCalcul.resources
+C:\Users\dbrunet\Desktop\CsAddition\CsAddition\obj\x86\Debug\CsAddition.csprojResolveAssemblyReference.cache
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\obj\x86\Debug\CsAddition.exe
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\obj\x86\Debug\CsAddition.pdb
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\bin\Debug\CsAddition.exe
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\bin\Debug\CsAddition.pdb
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\obj\x86\Debug\CsAddition.csprojResolveAssemblyReference.cache
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\obj\x86\Debug\CsAddition.frmCalcul.resources
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\obj\x86\Debug\CsAddition.Properties.Resources.resources
+F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\obj\x86\Debug\CsAddition.csproj.GenerateResource.Cache

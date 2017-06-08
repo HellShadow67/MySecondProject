@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="85eb1c46-170b-4702-bcf5-163ba0b82994" name="sduarte@S015-P06 2016-11-16 09:42:54" runUser="0670086E\sduarte" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="02b3b4c5-8979-44a4-b16f-c3e99d0da1c1">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sduarte_S015-P06 2016-11-16 09_42_54">
+      <DeploymentItem filename="F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\CsAddition\bin\Debug\CsAddition.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-11-16T09:42:54.6012506+01:00" queuing="2016-11-16T09:42:54.7322637+01:00" start="2016-11-16T09:42:54.7352640+01:00" finish="2016-11-16T09:42:55.1023007+01:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="S015-P06" outcome="Warning" timestamp="2016-11-16T09:42:54.7312636+01:00">
+        <Text>Le déploiement est actuellement désactivé. L'élément de déploiement 'CsAddition.exe' sur le test 'TestVb.calcTest.additionTest4' n'a pas été déployé.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="additionTest4" storage="f:\bts sio\2ème année\1er semestre\slam4\csaddition\testvb\bin\debug\testvb.dll" id="7011bca7-e4d8-b66a-9ef3-8d88abf0255f">
+      <DeploymentItems>
+        <DeploymentItem filename="CsAddition.exe" />
+      </DeploymentItems>
+      <Execution id="abf877e1-c0ef-4a58-ad2d-a9dae3be21b9" />
+      <TestMethod codeBase="F:/BTS SIO/2ème année/1er semestre/Slam4/CsAddition/TestVb/bin/Debug/TestVb.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestVb.calcTest, TestVb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="additionTest4" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7011bca7-e4d8-b66a-9ef3-8d88abf0255f" executionId="abf877e1-c0ef-4a58-ad2d-a9dae3be21b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="abf877e1-c0ef-4a58-ad2d-a9dae3be21b9" testId="7011bca7-e4d8-b66a-9ef3-8d88abf0255f" testName="additionTest4" computerName="S015-P06" duration="00:00:00.0422634" startTime="2016-11-16T09:42:54.8002705+01:00" endTime="2016-11-16T09:42:55.0242929+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abf877e1-c0ef-4a58-ad2d-a9dae3be21b9">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à TestVb.calcTest.additionTest4() dans F:\BTS SIO\2ème année\1er semestre\Slam4\CsAddition\TestVb\calcTest.vb:ligne 170
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

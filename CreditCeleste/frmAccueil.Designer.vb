@@ -25,11 +25,13 @@ Partial Class frmAccueil
         Me.cmdIntroduction = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEtude = New System.Windows.Forms.Button()
-        Me.btnRelance = New System.Windows.Forms.Button()
+        Me.cboVendeur = New System.Windows.Forms.ComboBox()
+        Me.lblVendeur = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cmdIntroduction
         '
+        Me.cmdIntroduction.Enabled = False
         Me.cmdIntroduction.Location = New System.Drawing.Point(39, 208)
         Me.cmdIntroduction.Name = "cmdIntroduction"
         Me.cmdIntroduction.Size = New System.Drawing.Size(75, 23)
@@ -48,28 +50,38 @@ Partial Class frmAccueil
         '
         'btnEtude
         '
-        Me.btnEtude.Location = New System.Drawing.Point(195, 208)
+        Me.btnEtude.Enabled = False
+        Me.btnEtude.Location = New System.Drawing.Point(375, 208)
         Me.btnEtude.Name = "btnEtude"
         Me.btnEtude.Size = New System.Drawing.Size(66, 23)
         Me.btnEtude.TabIndex = 2
         Me.btnEtude.Text = "&Etude"
         Me.btnEtude.UseVisualStyleBackColor = True
         '
-        'btnRelance
+        'cboVendeur
         '
-        Me.btnRelance.Location = New System.Drawing.Point(362, 208)
-        Me.btnRelance.Name = "btnRelance"
-        Me.btnRelance.Size = New System.Drawing.Size(75, 23)
-        Me.btnRelance.TabIndex = 3
-        Me.btnRelance.Text = "&Relance"
-        Me.btnRelance.UseVisualStyleBackColor = True
+        Me.cboVendeur.FormattingEnabled = True
+        Me.cboVendeur.Location = New System.Drawing.Point(320, 41)
+        Me.cboVendeur.Name = "cboVendeur"
+        Me.cboVendeur.Size = New System.Drawing.Size(121, 21)
+        Me.cboVendeur.TabIndex = 11
+        '
+        'lblVendeur
+        '
+        Me.lblVendeur.AutoSize = True
+        Me.lblVendeur.Location = New System.Drawing.Point(330, 14)
+        Me.lblVendeur.Name = "lblVendeur"
+        Me.lblVendeur.Size = New System.Drawing.Size(47, 13)
+        Me.lblVendeur.TabIndex = 10
+        Me.lblVendeur.Text = "Vendeur"
         '
         'frmAccueil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(484, 262)
-        Me.Controls.Add(Me.btnRelance)
+        Me.Controls.Add(Me.cboVendeur)
+        Me.Controls.Add(Me.lblVendeur)
         Me.Controls.Add(Me.btnEtude)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cmdIntroduction)
@@ -82,6 +94,7 @@ Partial Class frmAccueil
     Friend WithEvents cmdIntroduction As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnEtude As System.Windows.Forms.Button
-    Friend WithEvents btnRelance As System.Windows.Forms.Button
+    Friend WithEvents cboVendeur As System.Windows.Forms.ComboBox
+    Friend WithEvents lblVendeur As System.Windows.Forms.Label
 
 End Class

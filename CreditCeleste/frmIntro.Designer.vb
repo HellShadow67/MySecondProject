@@ -28,28 +28,23 @@ Partial Class frmIntro
         Me.lblNom = New System.Windows.Forms.Label()
         Me.txtbxPrenom = New System.Windows.Forms.TextBox()
         Me.lblPrenom = New System.Windows.Forms.Label()
-        Me.lblNvVehicule = New System.Windows.Forms.Label()
-        Me.txtbxNvVehicule = New System.Windows.Forms.TextBox()
-        Me.lblVendeur = New System.Windows.Forms.Label()
-        Me.cboVendeur = New System.Windows.Forms.ComboBox()
-        Me.txtbxAncVehicule = New System.Windows.Forms.TextBox()
-        Me.lblAncVehicule = New System.Windows.Forms.Label()
         Me.cmdEnregistrer = New System.Windows.Forms.Button()
-        Me.cmdVoiture = New System.Windows.Forms.Button()
+        Me.cmdAcheterVoiture = New System.Windows.Forms.Button()
         Me.cmdCredit = New System.Windows.Forms.Button()
-        Me.cmdPlus = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.rbdOcc5EtPlus = New System.Windows.Forms.RadioButton()
-        Me.rdbOcc3a5 = New System.Windows.Forms.RadioButton()
-        Me.rdbOcc3 = New System.Windows.Forms.RadioButton()
-        Me.rdbNeuf = New System.Windows.Forms.RadioButton()
-        Me.GroupBox1.SuspendLayout()
+        Me.cmdVendreVoit = New System.Windows.Forms.Button()
+        Me.btnAccueil = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtVille = New System.Windows.Forms.TextBox()
+        Me.txtCp = New System.Windows.Forms.TextBox()
+        Me.txtRue = New System.Windows.Forms.TextBox()
+        Me.txtNumRue = New System.Windows.Forms.TextBox()
+        Me.cmbRue = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(25, 43)
+        Me.Label1.Location = New System.Drawing.Point(28, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 13)
         Me.Label1.TabIndex = 0
@@ -59,14 +54,14 @@ Partial Class frmIntro
         '
         Me.cboIdentifiant.FormattingEnabled = True
         Me.cboIdentifiant.Items.AddRange(New Object() {"Mme", "Mlle", "M"})
-        Me.cboIdentifiant.Location = New System.Drawing.Point(28, 71)
+        Me.cboIdentifiant.Location = New System.Drawing.Point(31, 97)
         Me.cboIdentifiant.Name = "cboIdentifiant"
         Me.cboIdentifiant.Size = New System.Drawing.Size(121, 21)
         Me.cboIdentifiant.TabIndex = 1
         '
         'txtbxNom
         '
-        Me.txtbxNom.Location = New System.Drawing.Point(28, 123)
+        Me.txtbxNom.Location = New System.Drawing.Point(199, 98)
         Me.txtbxNom.Name = "txtbxNom"
         Me.txtbxNom.Size = New System.Drawing.Size(100, 20)
         Me.txtbxNom.TabIndex = 2
@@ -74,7 +69,7 @@ Partial Class frmIntro
         'lblNom
         '
         Me.lblNom.AutoSize = True
-        Me.lblNom.Location = New System.Drawing.Point(28, 150)
+        Me.lblNom.Location = New System.Drawing.Point(196, 125)
         Me.lblNom.Name = "lblNom"
         Me.lblNom.Size = New System.Drawing.Size(29, 13)
         Me.lblNom.TabIndex = 3
@@ -82,7 +77,7 @@ Partial Class frmIntro
         '
         'txtbxPrenom
         '
-        Me.txtbxPrenom.Location = New System.Drawing.Point(28, 194)
+        Me.txtbxPrenom.Location = New System.Drawing.Point(353, 97)
         Me.txtbxPrenom.Name = "txtbxPrenom"
         Me.txtbxPrenom.Size = New System.Drawing.Size(100, 20)
         Me.txtbxPrenom.TabIndex = 4
@@ -90,170 +85,122 @@ Partial Class frmIntro
         'lblPrenom
         '
         Me.lblPrenom.AutoSize = True
-        Me.lblPrenom.Location = New System.Drawing.Point(28, 217)
+        Me.lblPrenom.Location = New System.Drawing.Point(350, 125)
         Me.lblPrenom.Name = "lblPrenom"
         Me.lblPrenom.Size = New System.Drawing.Size(43, 13)
         Me.lblPrenom.TabIndex = 5
         Me.lblPrenom.Text = "Prénom"
         '
-        'lblNvVehicule
-        '
-        Me.lblNvVehicule.AutoSize = True
-        Me.lblNvVehicule.Location = New System.Drawing.Point(258, 150)
-        Me.lblNvVehicule.Name = "lblNvVehicule"
-        Me.lblNvVehicule.Size = New System.Drawing.Size(119, 13)
-        Me.lblNvVehicule.TabIndex = 7
-        Me.lblNvVehicule.Text = "Mon Nouveau Véhicule"
-        '
-        'txtbxNvVehicule
-        '
-        Me.txtbxNvVehicule.Location = New System.Drawing.Point(228, 194)
-        Me.txtbxNvVehicule.Name = "txtbxNvVehicule"
-        Me.txtbxNvVehicule.Size = New System.Drawing.Size(200, 20)
-        Me.txtbxNvVehicule.TabIndex = 6
-        '
-        'lblVendeur
-        '
-        Me.lblVendeur.AutoSize = True
-        Me.lblVendeur.Location = New System.Drawing.Point(41, 312)
-        Me.lblVendeur.Name = "lblVendeur"
-        Me.lblVendeur.Size = New System.Drawing.Size(47, 13)
-        Me.lblVendeur.TabIndex = 8
-        Me.lblVendeur.Text = "Vendeur"
-        '
-        'cboVendeur
-        '
-        Me.cboVendeur.FormattingEnabled = True
-        Me.cboVendeur.Location = New System.Drawing.Point(31, 339)
-        Me.cboVendeur.Name = "cboVendeur"
-        Me.cboVendeur.Size = New System.Drawing.Size(121, 21)
-        Me.cboVendeur.TabIndex = 9
-        '
-        'txtbxAncVehicule
-        '
-        Me.txtbxAncVehicule.Location = New System.Drawing.Point(228, 68)
-        Me.txtbxAncVehicule.Name = "txtbxAncVehicule"
-        Me.txtbxAncVehicule.Size = New System.Drawing.Size(200, 20)
-        Me.txtbxAncVehicule.TabIndex = 10
-        '
-        'lblAncVehicule
-        '
-        Me.lblAncVehicule.AutoSize = True
-        Me.lblAncVehicule.Location = New System.Drawing.Point(258, 52)
-        Me.lblAncVehicule.Name = "lblAncVehicule"
-        Me.lblAncVehicule.Size = New System.Drawing.Size(108, 13)
-        Me.lblAncVehicule.TabIndex = 11
-        Me.lblAncVehicule.Text = "Mon Ancien Véhicule"
-        '
         'cmdEnregistrer
         '
-        Me.cmdEnregistrer.Location = New System.Drawing.Point(63, 418)
+        Me.cmdEnregistrer.Location = New System.Drawing.Point(31, 384)
         Me.cmdEnregistrer.Name = "cmdEnregistrer"
         Me.cmdEnregistrer.Size = New System.Drawing.Size(75, 23)
         Me.cmdEnregistrer.TabIndex = 17
         Me.cmdEnregistrer.Text = "J'enregistre"
         Me.cmdEnregistrer.UseVisualStyleBackColor = True
         '
-        'cmdVoiture
+        'cmdAcheterVoiture
         '
-        Me.cmdVoiture.Location = New System.Drawing.Point(178, 418)
-        Me.cmdVoiture.Name = "cmdVoiture"
-        Me.cmdVoiture.Size = New System.Drawing.Size(75, 23)
-        Me.cmdVoiture.TabIndex = 18
-        Me.cmdVoiture.Text = "Voiture"
-        Me.cmdVoiture.UseVisualStyleBackColor = True
+        Me.cmdAcheterVoiture.Enabled = False
+        Me.cmdAcheterVoiture.Location = New System.Drawing.Point(178, 384)
+        Me.cmdAcheterVoiture.Name = "cmdAcheterVoiture"
+        Me.cmdAcheterVoiture.Size = New System.Drawing.Size(118, 23)
+        Me.cmdAcheterVoiture.TabIndex = 18
+        Me.cmdAcheterVoiture.Text = "Acheter une voiture"
+        Me.cmdAcheterVoiture.UseVisualStyleBackColor = True
         '
         'cmdCredit
         '
-        Me.cmdCredit.Location = New System.Drawing.Point(302, 418)
+        Me.cmdCredit.Enabled = False
+        Me.cmdCredit.Location = New System.Drawing.Point(497, 384)
         Me.cmdCredit.Name = "cmdCredit"
         Me.cmdCredit.Size = New System.Drawing.Size(75, 23)
         Me.cmdCredit.TabIndex = 19
         Me.cmdCredit.Text = "Crédit"
         Me.cmdCredit.UseVisualStyleBackColor = True
         '
-        'cmdPlus
+        'cmdVendreVoit
         '
-        Me.cmdPlus.Location = New System.Drawing.Point(473, 418)
-        Me.cmdPlus.Name = "cmdPlus"
-        Me.cmdPlus.Size = New System.Drawing.Size(75, 23)
-        Me.cmdPlus.TabIndex = 20
-        Me.cmdPlus.Text = "Plus"
-        Me.cmdPlus.UseVisualStyleBackColor = True
+        Me.cmdVendreVoit.Enabled = False
+        Me.cmdVendreVoit.Location = New System.Drawing.Point(324, 384)
+        Me.cmdVendreVoit.Name = "cmdVendreVoit"
+        Me.cmdVendreVoit.Size = New System.Drawing.Size(114, 23)
+        Me.cmdVendreVoit.TabIndex = 20
+        Me.cmdVendreVoit.Text = "Vendre une voiture"
+        Me.cmdVendreVoit.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'btnAccueil
         '
-        Me.GroupBox1.Controls.Add(Me.rbdOcc5EtPlus)
-        Me.GroupBox1.Controls.Add(Me.rdbOcc3a5)
-        Me.GroupBox1.Controls.Add(Me.rdbOcc3)
-        Me.GroupBox1.Controls.Add(Me.rdbNeuf)
-        Me.GroupBox1.Location = New System.Drawing.Point(228, 250)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 110)
-        Me.GroupBox1.TabIndex = 21
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Type"
+        Me.btnAccueil.Location = New System.Drawing.Point(480, 33)
+        Me.btnAccueil.Name = "btnAccueil"
+        Me.btnAccueil.Size = New System.Drawing.Size(75, 23)
+        Me.btnAccueil.TabIndex = 21
+        Me.btnAccueil.Text = "Accueil"
+        Me.btnAccueil.UseVisualStyleBackColor = True
         '
-        'rbdOcc5EtPlus
+        'Label2
         '
-        Me.rbdOcc5EtPlus.AutoSize = True
-        Me.rbdOcc5EtPlus.Location = New System.Drawing.Point(31, 87)
-        Me.rbdOcc5EtPlus.Name = "rbdOcc5EtPlus"
-        Me.rbdOcc5EtPlus.Size = New System.Drawing.Size(139, 17)
-        Me.rbdOcc5EtPlus.TabIndex = 20
-        Me.rbdOcc5EtPlus.TabStop = True
-        Me.rbdOcc5EtPlus.Text = "Occasion - 5 ans et plus"
-        Me.rbdOcc5EtPlus.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(28, 214)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(45, 13)
+        Me.Label2.TabIndex = 22
+        Me.Label2.Text = "Adresse"
         '
-        'rdbOcc3a5
+        'txtVille
         '
-        Me.rdbOcc3a5.AutoSize = True
-        Me.rdbOcc3a5.Location = New System.Drawing.Point(31, 64)
-        Me.rdbOcc3a5.Name = "rdbOcc3a5"
-        Me.rdbOcc3a5.Size = New System.Drawing.Size(123, 17)
-        Me.rdbOcc3a5.TabIndex = 19
-        Me.rdbOcc3a5.TabStop = True
-        Me.rdbOcc3a5.Text = "Occasion - 3 à 5 ans"
-        Me.rdbOcc3a5.UseVisualStyleBackColor = True
+        Me.txtVille.Location = New System.Drawing.Point(472, 263)
+        Me.txtVille.Name = "txtVille"
+        Me.txtVille.Size = New System.Drawing.Size(100, 20)
+        Me.txtVille.TabIndex = 23
         '
-        'rdbOcc3
+        'txtCp
         '
-        Me.rdbOcc3.AutoSize = True
-        Me.rdbOcc3.Location = New System.Drawing.Point(31, 41)
-        Me.rdbOcc3.Name = "rdbOcc3"
-        Me.rdbOcc3.Size = New System.Drawing.Size(105, 17)
-        Me.rdbOcc3.TabIndex = 18
-        Me.rdbOcc3.TabStop = True
-        Me.rdbOcc3.Text = "Occasion - 3 ans"
-        Me.rdbOcc3.UseVisualStyleBackColor = True
+        Me.txtCp.Location = New System.Drawing.Point(371, 263)
+        Me.txtCp.Name = "txtCp"
+        Me.txtCp.Size = New System.Drawing.Size(67, 20)
+        Me.txtCp.TabIndex = 24
         '
-        'rdbNeuf
+        'txtRue
         '
-        Me.rdbNeuf.AutoSize = True
-        Me.rdbNeuf.Location = New System.Drawing.Point(31, 18)
-        Me.rdbNeuf.Name = "rdbNeuf"
-        Me.rdbNeuf.Size = New System.Drawing.Size(48, 17)
-        Me.rdbNeuf.TabIndex = 17
-        Me.rdbNeuf.TabStop = True
-        Me.rdbNeuf.Text = "Neuf"
-        Me.rdbNeuf.UseVisualStyleBackColor = True
+        Me.txtRue.Location = New System.Drawing.Point(238, 264)
+        Me.txtRue.Name = "txtRue"
+        Me.txtRue.Size = New System.Drawing.Size(100, 20)
+        Me.txtRue.TabIndex = 25
+        '
+        'txtNumRue
+        '
+        Me.txtNumRue.Location = New System.Drawing.Point(31, 264)
+        Me.txtNumRue.Name = "txtNumRue"
+        Me.txtNumRue.Size = New System.Drawing.Size(42, 20)
+        Me.txtNumRue.TabIndex = 26
+        '
+        'cmbRue
+        '
+        Me.cmbRue.FormattingEnabled = True
+        Me.cmbRue.Items.AddRange(New Object() {"Boulevard", "Imapasse", "Place", "Route", "Rue"})
+        Me.cmbRue.Location = New System.Drawing.Point(91, 263)
+        Me.cmbRue.Name = "cmbRue"
+        Me.cmbRue.Size = New System.Drawing.Size(121, 21)
+        Me.cmbRue.TabIndex = 27
         '
         'frmIntro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 462)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.cmdPlus)
+        Me.ClientSize = New System.Drawing.Size(584, 416)
+        Me.Controls.Add(Me.cmbRue)
+        Me.Controls.Add(Me.txtNumRue)
+        Me.Controls.Add(Me.txtRue)
+        Me.Controls.Add(Me.txtCp)
+        Me.Controls.Add(Me.txtVille)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnAccueil)
+        Me.Controls.Add(Me.cmdVendreVoit)
         Me.Controls.Add(Me.cmdCredit)
-        Me.Controls.Add(Me.cmdVoiture)
+        Me.Controls.Add(Me.cmdAcheterVoiture)
         Me.Controls.Add(Me.cmdEnregistrer)
-        Me.Controls.Add(Me.lblAncVehicule)
-        Me.Controls.Add(Me.txtbxAncVehicule)
-        Me.Controls.Add(Me.cboVendeur)
-        Me.Controls.Add(Me.lblVendeur)
-        Me.Controls.Add(Me.lblNvVehicule)
-        Me.Controls.Add(Me.txtbxNvVehicule)
         Me.Controls.Add(Me.lblPrenom)
         Me.Controls.Add(Me.txtbxPrenom)
         Me.Controls.Add(Me.lblNom)
@@ -262,8 +209,6 @@ Partial Class frmIntro
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmIntro"
         Me.Text = "frmIntro"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -274,19 +219,15 @@ Partial Class frmIntro
     Friend WithEvents lblNom As System.Windows.Forms.Label
     Friend WithEvents txtbxPrenom As System.Windows.Forms.TextBox
     Friend WithEvents lblPrenom As System.Windows.Forms.Label
-    Friend WithEvents lblNvVehicule As System.Windows.Forms.Label
-    Friend WithEvents txtbxNvVehicule As System.Windows.Forms.TextBox
-    Friend WithEvents lblVendeur As System.Windows.Forms.Label
-    Friend WithEvents cboVendeur As System.Windows.Forms.ComboBox
-    Friend WithEvents txtbxAncVehicule As System.Windows.Forms.TextBox
-    Friend WithEvents lblAncVehicule As System.Windows.Forms.Label
     Friend WithEvents cmdEnregistrer As System.Windows.Forms.Button
-    Friend WithEvents cmdVoiture As System.Windows.Forms.Button
+    Friend WithEvents cmdAcheterVoiture As System.Windows.Forms.Button
     Friend WithEvents cmdCredit As System.Windows.Forms.Button
-    Friend WithEvents cmdPlus As System.Windows.Forms.Button
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents rbdOcc5EtPlus As System.Windows.Forms.RadioButton
-    Friend WithEvents rdbOcc3a5 As System.Windows.Forms.RadioButton
-    Friend WithEvents rdbOcc3 As System.Windows.Forms.RadioButton
-    Friend WithEvents rdbNeuf As System.Windows.Forms.RadioButton
+    Friend WithEvents cmdVendreVoit As System.Windows.Forms.Button
+    Friend WithEvents btnAccueil As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtVille As System.Windows.Forms.TextBox
+    Friend WithEvents txtCp As System.Windows.Forms.TextBox
+    Friend WithEvents txtRue As System.Windows.Forms.TextBox
+    Friend WithEvents txtNumRue As System.Windows.Forms.TextBox
+    Friend WithEvents cmbRue As System.Windows.Forms.ComboBox
 End Class

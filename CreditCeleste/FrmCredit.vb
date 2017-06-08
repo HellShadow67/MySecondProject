@@ -1,8 +1,17 @@
-﻿Public Class FrmCredit
+﻿Imports System.Data.SqlClient
 
-    Private Sub FrmCredit_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
-    End Sub
+
+Public Class FrmCredit
+
+    Dim connectionString As String = "Server=DESKTOP-R0IJ4CS\SQLEXPRESS; Initial Catalog=CreditCeleste;Trusted_Connection=Yes"
+    Dim con As New SqlConnection(connectionString)
+    Dim dr As SqlDataReader
+    Dim idClient = 0
+
+    Dim unCredit As New Credit
+    Dim idPret = 0
+
 
     Private Sub BtnCalculer_Click(sender As System.Object, e As System.EventArgs) Handles BtnCalculer.Click
 
@@ -14,81 +23,34 @@
 
 
 
-        If (TxtDuree.Text = "") Then
-            Montant = Convert.ToDouble(TxtMensualite.Text)
-            Mensualite = Convert.ToDouble(TxtMontant.Text)
-            Taux = Convert.ToDouble(TxtTaux.Text)
-
-            Dim tps = 100
-            Dim resultat = False
-
-            While resultat <> True
-                Dim monMontant = Mensualite * (1 - (1 + ((Taux / 100) / 12)) ^ (-Duree)) / ((Taux / 100) / 12)
-                If Format(monMontant, "0") = Montant Then
-                    resultat = True
-                ElseIf monMontant < Montant Then
-                    tps = (tps + tps / 2)
-                Else
-                    tps = (tps / 2)
-                End If
-            End While
-
-            TxtDuree.Text = Format(tps, "0")
-
-            LblMsg.Text = "Calcul de la durée effectué!"
+        If (String.IsNullOrEmpty(TxtDuree.Text) Or String.IsNullOrEmpty(TxtTaux.Text)) Then
+            MessageBox.Show("La durée et le taux doivent être remplis!")
         End If
+        If (String.IsNullOrEmpty(TxtMensualite.Text) And String.IsNullOrEmpty(TxtMontant.Text)) Then
+            MessageBox.Show("La mensualité ou le montant doit être rempli!")
+        Else
+            If (String.IsNullOrEmpty(TxtMensualite.Text)) Then
 
-        If (TxtMensualite.Text = "") Then
-            Montant = Convert.ToDouble(TxtMontant.Text)
+                Montant = Convert.ToDouble(TxtMontant.Text)
+                Taux = Convert.ToDouble(TxtTaux.Text)
+                Duree = Convert.ToDouble(TxtDuree.Text)
 
-            Taux = Convert.ToDouble(TxtTaux.Text)
-            Duree = Convert.ToDouble(TxtDuree.Text)
+                TxtMensualite.Text = Format(unCredit.getMensualite(Duree, Montant, Taux), "0.00")
 
-            Mensualite = (Montant * ((Taux / 100) / 12) / (1 - (1 + (Taux / 100) / 12) ^ (-Duree)))
+                LblMsg.Text = "Le calcul des mensualités a été effectué!"
+            End If
 
-            TxtMensualite.Text = Format(Mensualite, "0.00")
+            If (String.IsNullOrEmpty(TxtMontant.Text)) Then
 
+                Mensualite = Convert.ToDouble(TxtMensualite.Text)
+                Taux = Convert.ToDouble(TxtTaux.Text)
+                Duree = Convert.ToDouble(TxtDuree.Text)
 
-            LblMsg.Text = "Calcul des mensualités effectué!"
-        End If
+                TxtMontant.Text = Format(unCredit.getMontant(Duree, Mensualite, Taux), "0.00")
 
-        If (TxtTaux.Text = "") Then
-            Mensualite = Convert.ToDouble(TxtMensualite.Text)
-            Montant = Convert.ToDouble(TxtMontant.Text)
-            Duree = Convert.ToDouble(TxtDuree.Text)
+                LblMsg.Text = "Le calcul du montant a été effectué!"
 
-            Dim tx = 50.0
-            Dim resultat = False
-
-            While resultat <> True
-                Dim monMontant = Mensualite * (1 - (1 + ((Taux / 100) / 12)) ^ (-Duree)) / ((Taux / 100) / 12)
-                If Format(monMontant, "0.00") = Montant Then
-                    resultat = True
-                ElseIf monMontant > Montant Then
-                    tx = (tx + tx / 2)
-                Else
-                    tx = (tx / 2)
-                End If
-            End While
-
-            TxtTaux.Text = Format(tx, "0.00")
-
-            LblMsg.Text = "Calcul du taux effectué!"
-        End If
-
-        If (TxtMontant.Text = "") Then
-
-            Mensualite = Convert.ToDouble(TxtMensualite.Text)
-            Taux = Convert.ToDouble(TxtTaux.Text)
-            Duree = Convert.ToDouble(TxtDuree.Text)
-
-            Montant = Mensualite * (1 - (1 + ((Taux / 100) / 12)) ^ (-Duree)) / ((Taux / 100) / 12)
-
-
-            LblMsg.Text = "Calcul du montant effectué!"
-
-            TxtMontant.Text = Format(Montant, "0.00")
-
+            End If
         End If
 
     End Sub
@@ -96,5 +58,78 @@
     Private Sub btnReset_Click(sender As System.Object, e As System.EventArgs) Handles btnReset.Click
         Controls.Clear()
         InitializeComponent()
+    End Sub
+
+    Private Sub btnEnregistrer_Click(sender As System.Object, e As System.EventArgs) Handles btnEnregistrer.Click
+        con.Open()
+
+        Dim Mensualite = TxtMensualite.Text
+        Dim Taux = TxtTaux.Text
+        Dim Duree = TxtDuree.Text
+        Dim montant = TxtMontant.Text
+
+        Mensualite = CInt(Mensualite)
+        Taux = CInt(Taux)
+        Duree = CInt(Duree)
+        montant = CInt(montant)
+
+        Mensualite = Mensualite.ToString()
+        Taux = Taux.ToString()
+        Duree = Duree.ToString()
+        montant = montant.ToString()
+
+
+        Dim myCommand1 = New SqlCommand("insert into Pret(capital, mensualite, taux, duree) values(" + montant + "," + Mensualite + "," + Taux + "," + Duree + ")", con)
+        dr = myCommand1.ExecuteReader()
+        dr.Close()
+
+        Dim myCommand = New SqlCommand("SELECT idPret FROM Pret where capital=" + montant + " and mensualite=" + Mensualite + " and taux=" + Taux + "and duree=" + Duree + ";", con)
+        'MessageBox.Show("SELECT idPret FROM Pret where capital=" + montant + " and mensualite=" + Mensualite + " and taux=" + Taux + "and duree=" + Duree + ";")
+        dr = myCommand.ExecuteReader()
+        While dr.Read()
+            idPret = CInt(dr("idPret"))
+        End While
+        dr.Close()
+
+        Dim myCommand4 = New SqlCommand("SELECT idClient FROM client where Nom='" + unClient.getNom() + "' and Prenom='" + unClient.getPrenom() + "';", con)
+        dr = myCommand4.ExecuteReader()
+        While dr.Read()
+            idClient = CInt(dr("idClient"))
+        End While
+        dr.Close()
+
+        Dim myCommand2 = New SqlCommand(" Update client set idPret = " + idPret.ToString() + " WHERE idClient =" + idClient.ToString() + ";", con)
+        'MessageBox.Show(" Update client set idPret = " + idPret.ToString() + " WHERE idClient =" + idClient.ToString() + ";")
+        dr = myCommand2.ExecuteReader()
+        dr.Close()
+
+        con.Close()
+        MessageBox.Show("L'enregistrement a bien été effectué!")
+    End Sub
+
+ 
+    Private Sub FrmCredit_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnAccueil_Click(sender As System.Object, e As System.EventArgs) Handles btnAccueil.Click
+        unPageAccueil = New frmAccueil
+        unPageAccueil.Show()
+        Me.Hide()
+    End Sub
+
+    
+
+
+    Private Sub cmdAcheterVoiture_Click(sender As System.Object, e As System.EventArgs) Handles cmdAcheterVoiture.Click
+        fenCatalogueVoiture = New frmCatalogueVoiture
+        fenCatalogueVoiture.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub cmdVendreVoit_Click(sender As System.Object, e As System.EventArgs) Handles cmdVendreVoit.Click
+        fenvoiture = New FrmVoiture
+        fenvoiture.Show()
+        Me.Hide()
     End Sub
 End Class
