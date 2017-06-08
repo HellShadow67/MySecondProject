@@ -35,6 +35,8 @@ Partial Class FrmCredit
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnEnregistrer = New System.Windows.Forms.Button()
         Me.btnAccueil = New System.Windows.Forms.Button()
+        Me.cmdVendreVoit = New System.Windows.Forms.Button()
+        Me.cmdAcheterVoiture = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblMensualite
@@ -145,11 +147,31 @@ Partial Class FrmCredit
         Me.btnAccueil.Text = "Accueil"
         Me.btnAccueil.UseVisualStyleBackColor = True
         '
+        'cmdVendreVoit
+        '
+        Me.cmdVendreVoit.Location = New System.Drawing.Point(431, 287)
+        Me.cmdVendreVoit.Name = "cmdVendreVoit"
+        Me.cmdVendreVoit.Size = New System.Drawing.Size(114, 23)
+        Me.cmdVendreVoit.TabIndex = 22
+        Me.cmdVendreVoit.Text = "Vendre une voiture"
+        Me.cmdVendreVoit.UseVisualStyleBackColor = True
+        '
+        'cmdAcheterVoiture
+        '
+        Me.cmdAcheterVoiture.Location = New System.Drawing.Point(431, 222)
+        Me.cmdAcheterVoiture.Name = "cmdAcheterVoiture"
+        Me.cmdAcheterVoiture.Size = New System.Drawing.Size(118, 23)
+        Me.cmdAcheterVoiture.TabIndex = 21
+        Me.cmdAcheterVoiture.Text = "Acheter une voiture"
+        Me.cmdAcheterVoiture.UseVisualStyleBackColor = True
+        '
         'FrmCredit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(557, 322)
+        Me.Controls.Add(Me.cmdVendreVoit)
+        Me.Controls.Add(Me.cmdAcheterVoiture)
         Me.Controls.Add(Me.btnAccueil)
         Me.Controls.Add(Me.btnEnregistrer)
         Me.Controls.Add(Me.btnReset)
@@ -182,4 +204,6 @@ Partial Class FrmCredit
     Friend WithEvents btnReset As System.Windows.Forms.Button
     Friend WithEvents btnEnregistrer As System.Windows.Forms.Button
     Friend WithEvents btnAccueil As System.Windows.Forms.Button
+    Friend WithEvents cmdVendreVoit As System.Windows.Forms.Button
+    Friend WithEvents cmdAcheterVoiture As System.Windows.Forms.Button
 End Class

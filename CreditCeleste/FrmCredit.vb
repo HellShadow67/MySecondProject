@@ -117,4 +117,19 @@ Public Class FrmCredit
         unPageAccueil.Show()
         Me.Hide()
     End Sub
+
+    
+
+
+    Private Sub cmdAcheterVoiture_Click(sender As System.Object, e As System.EventArgs) Handles cmdAcheterVoiture.Click
+        fenCatalogueVoiture = New frmCatalogueVoiture
+        fenCatalogueVoiture.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub cmdVendreVoit_Click(sender As System.Object, e As System.EventArgs) Handles cmdVendreVoit.Click
+        fenvoiture = New FrmVoiture
+        fenvoiture.Show()
+        Me.Hide()
+    End Sub
 End Class

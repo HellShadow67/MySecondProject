@@ -27,14 +27,16 @@ Public Class frmCatalogueVoiture
 
 
     Private Sub btnValider_Click(sender As System.Object, e As System.EventArgs) Handles btnValider.Click
-        Dim myCommand = New SqlCommand("Select idVehicule  from vehicule where marque='" + cmbMarque.Text + "' and modele='" + cmbModele.Text + "';", con)
+        Dim myCommand = New SqlCommand("Select idVehicule, tarif  from vehicule where marque='" + cmbMarque.Text + "' and modele='" + cmbModele.Text + "';", con)
         con.Open()
         dr = myCommand.ExecuteReader()
         Dim idVeh = 0
         Dim idClient = 0
+        Dim montantAchat = 0
 
         While dr.Read()
             idVeh = (dr("idVehicule").ToString())
+            montantAchat = (dr("tarif").ToString())
         End While
         dr.Close()
 
@@ -45,9 +47,21 @@ Public Class frmCatalogueVoiture
         End While
         dr.Close()
 
+        Dim idVendeur = 0
+        Dim myCommand5 = New SqlCommand("SELECT IdentifiantVendeur FROM vendeur where NomVendeur='" + unVendeur.getNom() + "' and PrenomVendeur='" + unVendeur.getPrenom() + "';", con)
+        dr = myCommand5.ExecuteReader()
+        While dr.Read()
+            idVendeur = CInt(dr("IdentifiantVendeur"))
+        End While
+        dr.Close()
+
         Dim myCommand2 = New SqlCommand(" Update client set idNouveauVeh = " + idVeh.ToString() + " WHERE idClient =" + idClient.ToString() + ";", con)
         'MessageBox.Show(" Update client set idPret = " + idPret.ToString() + " WHERE idClient =" + idClient.ToString() + ";")
         dr = myCommand2.ExecuteReader()
+        dr.Close()
+
+        Dim myCommand3 = New SqlCommand("UPDATE vente SET nbrVente = nbrVente + 1,cummulComm = cummulComm+(montant*commission/100), montant=montant + " + montantAchat.ToString() + "  WHERE idhist=3 and idVendeur=" + idVendeur.ToString() + ";", con)
+        dr = myCommand3.ExecuteReader()
         dr.Close()
 
         con.Close()
@@ -56,9 +70,9 @@ Public Class frmCatalogueVoiture
 
     End Sub
 
-    Private Sub btnAnnuler_Click(sender As System.Object, e As System.EventArgs) Handles btnAnnuler.Click
-        fenIntro = frmIntro
-        fenIntro.Show()
+    Private Sub btnAnnuler_Click(sender As System.Object, e As System.EventArgs) Handles btnVendre.Click
+        fenvoiture = New FrmVoiture
+        fenvoiture.Show()
         Me.Hide()
     End Sub
 
@@ -95,6 +109,12 @@ Public Class frmCatalogueVoiture
     Private Sub btnAccueil_Click(sender As System.Object, e As System.EventArgs) Handles btnAccueil.Click
         unPageAccueil = New frmAccueil
         unPageAccueil.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnCredit_Click(sender As System.Object, e As System.EventArgs) Handles btnCredit.Click
+        fenCredit = New FrmCredit
+        fenCredit.Show()
         Me.Hide()
     End Sub
 End Class
